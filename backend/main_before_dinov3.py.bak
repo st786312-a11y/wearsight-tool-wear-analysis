@@ -1,0 +1,397 @@
+from __future__ import annotations
+
+import json
+import hashlib
+import math
+import os
+import shutil
+import statistics
+import urllib.error
+import urllib.parse
+import urllib.request
+import uuid
+from datetime import datetime, timezone
+from io import BytesIO
+from pathlib import Path
+
+import open_clip
+import numpy as np
+import torch
+from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel
+from PIL import Image
+from ultralytics import YOLO
+
+ROOT = Path(__file__).parent
+CASES_FILE = ROOT / "data" / "cases.json"
+HISTORY_FILE = ROOT / "data" / "history.json"
+SETTINGS_FILE = ROOT / "data" / "settings.json"
+RESULTS_DIR = ROOT / "data" / "results"
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+app = FastAPI(title="WearSight CLIP Analyzer")
+RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+app.mount("/api/results", StaticFiles(directory=RESULTS_DIR), name="results")
+model = None
+preprocess = None
+yolo_model = None
+case_embeddings: list[dict] = []
+
+
+class Settings(BaseModel):
+    model: str = "OpenCLIP ViT-B/32"
+    top_k: int = 5
+    moderate_threshold: float = 15
+    severe_threshold: float = 30
+
+
+class AssistantRequest(BaseModel):
+    question: str
+    predicted_rate: float
+    confidence: float
+    similarity: float
+
+
+def read_json(path: Path, default: list | dict) -> list | dict:
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
+
+
+def write_json(path: Path, value: list | dict) -> None:
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def load_model() -> None:
+    global model, preprocess
+    if model is None:
+        model, _, preprocess = open_clip.create_model_and_transforms("ViT-B-32", pretrained="laion2b_s34b_b79k")
+        model.to(DEVICE).eval()
+
+
+def load_yolo() -> YOLO:
+    global yolo_model
+    if yolo_model is None:
+        model_path = Path(os.getenv("YOLO_MODEL_PATH", ROOT / "models" / "keypoint-best.pt"))
+        if not model_path.exists():
+            raise HTTPException(503, "找不到 YOLO keypoint 模型檔。")
+        yolo_model = YOLO(model_path)
+    return yolo_model
+
+
+def encode(image: Image.Image) -> torch.Tensor:
+    load_model()
+    with torch.no_grad():
+        feature = model.encode_image(preprocess(image.convert("RGB")).unsqueeze(0).to(DEVICE))
+    return torch.nn.functional.normalize(feature, dim=-1).cpu()
+
+
+def image_fingerprint(image: Image.Image) -> str:
+    """Identify the same visual image even when its upload filename differs."""
+    rgb = image.convert("RGB")
+    return hashlib.sha256(rgb.tobytes()).hexdigest()
+
+
+def detect_tool(image: Image.Image) -> dict:
+    """Run the user-provided pose model and save its actual annotated output."""
+    result = load_yolo().predict(source=np.asarray(image.convert("RGB")), conf=0.25, verbose=False)[0]
+    annotated = Image.fromarray(result.plot()[..., ::-1])
+    filename = f"{uuid.uuid4().hex}.jpg"
+    annotated.save(RESULTS_DIR / filename, quality=92)
+
+    detections = []
+    boxes = result.boxes
+    keypoints = result.keypoints
+    if boxes is not None:
+        for index, box in enumerate(boxes):
+            class_id = int(box.cls.item())
+            points = []
+            if keypoints is not None and keypoints.xy is not None and index < len(keypoints.xy):
+                points = [[round(float(x), 1), round(float(y), 1)] for x, y in keypoints.xy[index].tolist()]
+            detections.append({
+                "tool_class": result.names[class_id],
+                "confidence": round(float(box.conf.item()), 3),
+                "bbox": [round(float(value), 1) for value in box.xyxy[0].tolist()],
+                "keypoints": points,
+            })
+    detections.sort(key=lambda item: item["confidence"], reverse=True)
+    primary = detections[0] if detections else None
+    return {
+        "annotated_image_url": f"/api/results/{filename}",
+        "detection": primary,
+        "detections": detections,
+    }
+
+
+def load_cases() -> None:
+    if case_embeddings:
+        return
+    for case in json.loads(CASES_FILE.read_text(encoding="utf-8")):
+        path = ROOT / case["image"]
+        if path.exists():
+            case_image = Image.open(path)
+            case_embeddings.append({**case, "embedding": encode(case_image), "fingerprint": image_fingerprint(case_image)})
+    if not case_embeddings:
+        raise HTTPException(503, "找不到案例影像。請先依 data/cases.json 放入至少 5 張參考照片。")
+
+
+def wear_assessment(rate: float) -> dict[str, str | int]:
+    """Generate a safe local recommendation for percentage-labelled cases."""
+    percentage = min(100, round(rate * 100))
+    if percentage <= 40:
+        return {"level": "輕微", "availability": "可用", "description": "磨耗仍低，建議維持正常加工並定期觀察。", "recommendation": "觀察", "percentage": percentage}
+    if percentage <= 75:
+        return {"level": "中度", "availability": "短時間可用", "description": "刀刃已有明顯磨耗，建議降低加工負載並安排近期換刀。", "recommendation": "降載或更換", "percentage": percentage}
+    return {"level": "嚴重", "availability": "建議更換", "description": "磨耗接近或超過換刀基準，持續使用可能影響加工品質。", "recommendation": "更換", "percentage": percentage}
+
+
+def determine_status(wear_percent: float, detection_confidence: float | None, average_similarity: float, wear_std_percent: float) -> dict[str, str]:
+    """Keep the operational policy beside the model result, not in a UI client."""
+    if detection_confidence is None or detection_confidence < 0.5:
+        return {"status": "manual_review", "status_reason": "未取得足夠可靠的刀具偵測結果，請人工確認框選區域。"}
+    if average_similarity < 0.85 or wear_std_percent > 20:
+        return {"status": "manual_review", "status_reason": "相似案例的磨耗結果分散，建議人工覆核。"}
+    if wear_percent >= 80:
+        return {"status": "replace_or_stop", "status_reason": "預估磨耗已達 80% 的更換門檻。"}
+    return {"status": "continue", "status_reason": "目前結果未達更換門檻，請持續依建議週期觀察。"}
+
+
+def ask_ollama(prompt: str) -> str | None:
+    """Use a locally deployed Ollama model when present, without making it mandatory."""
+    endpoint = os.getenv("OLLAMA_URL", "http://host.docker.internal:11434").rstrip("/") + "/api/generate"
+    payload = json.dumps({"model": os.getenv("OLLAMA_MODEL", "qwen2.5:1.5b"), "prompt": prompt, "stream": False}).encode()
+    request = urllib.request.Request(endpoint, data=payload, headers={"Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(request, timeout=float(os.getenv("OLLAMA_TIMEOUT", "60"))) as response:
+            answer = json.loads(response.read().decode()).get("response", "").strip()
+            return answer or None
+    except (OSError, urllib.error.URLError, json.JSONDecodeError):
+        return None
+
+
+def generate_assistant_answer(question: str, predicted_rate: float, similarity: float) -> dict[str, str]:
+    """Answer only from the completed analysis; Ollama is optional."""
+    assessment = wear_assessment(predicted_rate)
+    prompt = (
+        "你是製造現場的刀具磨耗顧問。請用繁體中文、150 字內回答。"
+        f"目前 CLIP 預估磨耗率={predicted_rate * 100:.0f}%，"
+        f"磨耗={assessment['percentage']}%，程度={assessment['level']}，"
+        f"可用狀態={assessment['availability']}，平均相似度={similarity:.3f}。"
+        f"使用者問題：{question}\n請提供具體、保守且可執行的建議。"
+    )
+    answer = ask_ollama(prompt)
+    if answer:
+        return {"answer": answer, "source": "Ollama"}
+    fallback = (
+        f"目前預估磨耗率為 {assessment['percentage']}%（{assessment['level']}）。"
+        f"{assessment['description']} 建議：{assessment['recommendation']}。"
+    )
+    return {"answer": fallback, "source": "系統建議"}
+
+
+@app.post("/api/analyze")
+async def analyze(
+    request: Request,
+    image: UploadFile | None = File(None),
+    image_url: str | None = Form(None),
+    question: str | None = Form(None),
+) -> dict:
+    """Analyze a direct upload or a Dify-provided image URL."""
+    try:
+        # Dify's HTTP node maps start variables most reliably in a JSON body.
+        if not image_url and request.headers.get("content-type", "").startswith("application/json"):
+            try:
+                body = await request.json()
+                image_url = body.get("image_url") if isinstance(body, dict) else None
+                question = question or (body.get("question") if isinstance(body, dict) else None)
+            except json.JSONDecodeError as error:
+                raise HTTPException(400, "圖片網址 JSON 格式不正確。") from error
+        if image_url:
+            parsed_url = urllib.parse.urlparse(image_url)
+            if parsed_url.scheme not in {"http", "https"}:
+                raise HTTPException(400, "圖片網址必須使用 HTTP 或 HTTPS。")
+            case_prefix = "/api/case-image-file/"
+            if parsed_url.path.startswith(case_prefix):
+                case_id = Path(parsed_url.path[len(case_prefix):]).stem
+                record = next((item for item in read_json(CASES_FILE, []) if item["id"] == case_id), None)
+                if record is None:
+                    raise HTTPException(404, "找不到指定案例圖片。")
+                query_image = Image.open(ROOT / record["image"])
+            else:
+                with urllib.request.urlopen(image_url, timeout=15) as response:
+                    query_image = Image.open(BytesIO(response.read()))
+            image_filename = Path(parsed_url.path).name or "remote-image.jpg"
+        elif image:
+            if not image.content_type or not image.content_type.startswith("image/"):
+                raise HTTPException(400, "請上傳圖片檔案。")
+            query_image = Image.open(BytesIO(await image.read()))
+            image_filename = image.filename or "upload.jpg"
+        else:
+            raise HTTPException(400, "請上傳圖片檔案或提供圖片網址。")
+        detection_result = detect_tool(query_image)
+        query = encode(query_image)
+        query_fingerprint = image_fingerprint(query_image)
+        load_cases()
+    except OSError as error:
+        raise HTTPException(400, "無法讀取這張圖片。") from error
+    ranked = []
+    for case in case_embeddings:
+        if case["fingerprint"] == query_fingerprint:
+            continue
+        ranked.append({**case, "similarity": float(torch.cosine_similarity(query, case["embedding"]).item())})
+    setting = Settings.model_validate(read_json(SETTINGS_FILE, {}))
+    top_k = sorted(ranked, key=lambda item: item["similarity"], reverse=True)[:setting.top_k]
+    if not top_k:
+        raise HTTPException(422, "上傳圖片與所有案例相同，無法排除自身後進行比對。")
+    weights = [math.exp(item["similarity"] * 10) for item in top_k]
+    rate = sum(item["wear_rate"] * weight for item, weight in zip(top_k, weights)) / sum(weights)
+    average_similarity = sum(item["similarity"] for item in top_k) / len(top_k)
+    public_top_k = [{key: value for key, value in item.items() if key not in {"embedding", "fingerprint"}} for item in top_k]
+    analysis_id = uuid.uuid4().hex
+    primary_detection = detection_result["detection"]
+    wear_std_percent = statistics.pstdev(item["wear_rate"] for item in top_k) * 100
+    result = {
+        "analysis_id": analysis_id,
+        "predicted_rate": round(rate, 3),
+        "predicted_wear_percent": round(rate * 100, 1),
+        "confidence": round(max(.55, min(.98, average_similarity)), 3),
+        "average_similarity": round(average_similarity, 3),
+        "wear_std": round(wear_std_percent / 100, 3),
+        "wear_std_percent": round(wear_std_percent, 1),
+        "excluded_self_match": True,
+        "tool_class": primary_detection["tool_class"] if primary_detection else None,
+        "detection_confidence": primary_detection["confidence"] if primary_detection else None,
+        "top_k": public_top_k,
+        **detection_result,
+    }
+    result.update(determine_status(
+        result["predicted_wear_percent"],
+        result["detection_confidence"],
+        result["average_similarity"],
+        result["wear_std_percent"],
+    ))
+    if question and question.strip():
+        if len(question.strip()) > 500:
+            raise HTTPException(400, "問題請限制在 500 個字內。")
+        result["expert_answer"] = generate_assistant_answer(
+            question.strip(), result["predicted_rate"], result["average_similarity"]
+        )
+    history = read_json(HISTORY_FILE, [])
+    history.insert(0, {
+        "id": analysis_id[:8],
+        "created_at": datetime.now(timezone.utc).isoformat(),
+        "filename": image_filename,
+        "wear_rate": result["predicted_rate"],
+        "confidence": result["confidence"],
+        "tool_class": result["tool_class"],
+        "detection_confidence": result["detection_confidence"],
+        "wear_std": result["wear_std"],
+        "question": question.strip() if question and question.strip() else None,
+        "top_k_case_ids": [item["id"] for item in public_top_k],
+    })
+    write_json(HISTORY_FILE, history[:100])
+    return result
+
+
+@app.post("/api/assistant")
+def assistant_answer(request: AssistantRequest) -> dict:
+    question = request.question.strip()
+    if not question or len(question) > 500:
+        raise HTTPException(400, "請輸入 1 至 500 個字的問題。")
+    return generate_assistant_answer(question, request.predicted_rate, request.similarity)
+
+
+@app.get("/api/history")
+def history() -> list[dict]:
+    return read_json(HISTORY_FILE, [])
+
+
+@app.get("/api/cases")
+def cases() -> list[dict]:
+    return read_json(CASES_FILE, [])
+
+
+@app.get("/api/case-image/{case_id}")
+def case_image(case_id: str) -> FileResponse:
+    """Serve a registered case image for the Top-K result cards."""
+    record = next((item for item in read_json(CASES_FILE, []) if item["id"] == case_id), None)
+    if record is None:
+        raise HTTPException(404, "找不到指定案例。")
+    image_path = ROOT / record["image"]
+    if not image_path.exists():
+        raise HTTPException(404, "找不到指定案例圖片。")
+    return FileResponse(image_path, media_type="image/jpeg", filename=image_path.name)
+
+
+@app.get("/api/case-image-file/{case_id}.jpg")
+def case_image_file(case_id: str) -> FileResponse:
+    """Provide a filename-bearing image URL for Dify remote-file inputs."""
+    return case_image(case_id)
+
+
+@app.post("/api/cases")
+async def add_case(case_id: str = Form(...), wear_rate: float = Form(...), hours_used: float = Form(...), image: UploadFile = File(...)) -> dict:
+    if not image.content_type or not image.content_type.startswith("image/"):
+        raise HTTPException(400, "請上傳案例圖片。")
+    suffix = Path(image.filename or "case.jpg").suffix.lower() or ".jpg"
+    filename = f"{case_id}{suffix}"
+    destination = ROOT / "data" / "cases" / filename
+    with destination.open("wb") as output:
+        shutil.copyfileobj(image.file, output)
+    record = {"id": case_id, "image": f"data/cases/{filename}", "wear_rate": wear_rate, "hours_used": hours_used}
+    records = read_json(CASES_FILE, [])
+    records = [item for item in records if item["id"] != case_id] + [record]
+    write_json(CASES_FILE, records)
+    case_embeddings.clear()
+    return record
+
+
+@app.delete("/api/cases/{case_id}")
+def delete_case(case_id: str) -> dict:
+    records = read_json(CASES_FILE, [])
+    target = next((item for item in records if item["id"] == case_id), None)
+    if target is None:
+        raise HTTPException(404, "找不到指定案例。")
+    image_path = ROOT / target["image"]
+    if image_path.exists():
+        image_path.unlink()
+    write_json(CASES_FILE, [item for item in records if item["id"] != case_id])
+    case_embeddings.clear()
+    return {"deleted": case_id}
+
+
+@app.get("/api/settings")
+def get_settings() -> Settings:
+    return Settings.model_validate(read_json(SETTINGS_FILE, {}))
+
+
+@app.get("/api/validate")
+def validate_retrieval() -> dict:
+    """Leave-one-out validation for the image -> Top-K -> wear estimate path."""
+    records = []
+    for item in read_json(CASES_FILE, []):
+        path = ROOT / item["image"]
+        if path.exists():
+            records.append({**item, "embedding": encode(Image.open(path))})
+    if len(records) < 6:
+        raise HTTPException(422, "至少需要 6 張已標註案例照片，才能執行留一法驗證。")
+
+    setting = Settings.model_validate(read_json(SETTINGS_FILE, {}))
+    results = []
+    for query in records:
+        candidates = [item for item in records if item["id"] != query["id"]]
+        ranked = sorted(candidates, key=lambda item: float(torch.cosine_similarity(query["embedding"], item["embedding"]).item()), reverse=True)
+        top_k = ranked[: min(setting.top_k, len(ranked))]
+        weights = [math.exp(float(torch.cosine_similarity(query["embedding"], item["embedding"]).item()) * 10) for item in top_k]
+        predicted = sum(item["wear_rate"] * weight for item, weight in zip(top_k, weights)) / sum(weights)
+        results.append({"id": query["id"], "actual": query["wear_rate"], "predicted": predicted, "absolute_error": abs(query["wear_rate"] - predicted)})
+    mae = sum(item["absolute_error"] for item in results) / len(results)
+    rmse = math.sqrt(sum((item["actual"] - item["predicted"]) ** 2 for item in results) / len(results))
+    return {"sample_count": len(results), "top_k": min(setting.top_k, len(records) - 1), "mae": mae, "rmse": rmse, "results": results}
+
+
+@app.put("/api/settings")
+def update_settings(settings: Settings) -> Settings:
+    if not 1 <= settings.top_k <= 20 or settings.moderate_threshold >= settings.severe_threshold:
+        raise HTTPException(400, "請確認 Top-K 與磨耗門檻設定。")
+    write_json(SETTINGS_FILE, settings.model_dump())
+    return settings

@@ -1,0 +1,1798 @@
+[
+  {
+    "id": "40fef3602ea1402f9328a6b93855d0f8",
+    "analysis_id": "40fef3602ea1402f9328a6b93855d0f8",
+    "created_at": "2026-09-08T09:55:00.948459+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.508236499186967,
+    "predicted_wear_percent": 50.8236499186967,
+    "average_similarity": 0.7459179711860646,
+    "detection_confidence": 0.838851809501648,
+    "status": "continue",
+    "status_label": "可持續觀察",
+    "reasons": [
+      "分析品質通過設定條件，預估磨耗率尚未達更換門檻。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-060-20260831_114318",
+      "WEAR-040-20260904_103904",
+      "WEAR-090-20260903_110533",
+      "WEAR-090-20260903_151143"
+    ]
+  },
+  {
+    "id": "5ced9184f3d84981a11a2097cf10982f",
+    "analysis_id": "5ced9184f3d84981a11a2097cf10982f",
+    "created_at": "2026-09-08T08:58:39.758721+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.508236499186967,
+    "predicted_wear_percent": 50.8236499186967,
+    "average_similarity": 0.7459179711860646,
+    "detection_confidence": 0.838851809501648,
+    "status": "continue",
+    "status_label": "可持續觀察",
+    "reasons": [
+      "分析品質通過設定條件，預估磨耗率尚未達更換門檻。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-060-20260831_114318",
+      "WEAR-040-20260904_103904",
+      "WEAR-090-20260903_110533",
+      "WEAR-090-20260903_151143"
+    ]
+  },
+  {
+    "id": "16cb835bfd184db7ae5a333c498903f1",
+    "analysis_id": "16cb835bfd184db7ae5a333c498903f1",
+    "created_at": "2026-09-08T08:58:34.084815+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.40310742232743146,
+    "predicted_wear_percent": 40.310742232743145,
+    "average_similarity": 0.9105487045084881,
+    "detection_confidence": 0.838851809501648,
+    "status": "continue",
+    "status_label": "可持續觀察",
+    "reasons": [
+      "分析品質通過設定條件，預估磨耗率尚未達更換門檻。"
+    ],
+    "retrieval_mode": "clip_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-090-20260903_150923",
+      "WEAR-010-20260902_140011",
+      "WEAR-030-20260831_114835",
+      "WEAR-030-20260824_160750"
+    ]
+  },
+  {
+    "id": "c83dac76fb9f4468862430f47fe15546",
+    "analysis_id": "c83dac76fb9f4468862430f47fe15546",
+    "created_at": "2026-09-08T08:58:23.077847+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.6462858741572386,
+    "predicted_wear_percent": 64.62858741572386,
+    "average_similarity": 0.9086395494794923,
+    "detection_confidence": 0.838851809501648,
+    "status": "continue",
+    "status_label": "可持續觀察",
+    "reasons": [
+      "分析品質通過設定條件，預估磨耗率尚未達更換門檻。"
+    ],
+    "retrieval_mode": "clip_full",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-090-20260825_151905",
+      "WEAR-070-20260824_110902",
+      "WEAR-090-20260903_110752",
+      "WEAR-040-20260904_104109",
+      "WEAR-030-20260901_110301"
+    ]
+  },
+  {
+    "id": "556d31a9113d4ff28da1e30ba6de931e",
+    "analysis_id": "556d31a9113d4ff28da1e30ba6de931e",
+    "created_at": "2026-09-08T08:55:12.192026+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.508236499186967,
+    "predicted_wear_percent": 50.8236499186967,
+    "average_similarity": 0.7459179711860646,
+    "detection_confidence": 0.838851809501648,
+    "status": "continue",
+    "status_label": "可持續觀察",
+    "reasons": [
+      "分析品質通過設定條件，預估磨耗率尚未達更換門檻。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-060-20260831_114318",
+      "WEAR-040-20260904_103904",
+      "WEAR-090-20260903_110533",
+      "WEAR-090-20260903_151143"
+    ]
+  },
+  {
+    "id": "ff2f9fd1a44845a899e91f8ae03f6ad5",
+    "analysis_id": "ff2f9fd1a44845a899e91f8ae03f6ad5",
+    "created_at": "2026-09-08T08:52:27.444492+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.508236499186967,
+    "predicted_wear_percent": 50.8236499186967,
+    "average_similarity": 0.7459179711860646,
+    "detection_confidence": 0.838851809501648,
+    "status": "continue",
+    "status_label": "可持續觀察",
+    "reasons": [
+      "分析品質通過設定條件，預估磨耗率尚未達更換門檻。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-060-20260831_114318",
+      "WEAR-040-20260904_103904",
+      "WEAR-090-20260903_110533",
+      "WEAR-090-20260903_151143"
+    ]
+  },
+  {
+    "id": "aa0e7202108b4635b40c1c869f41aa45",
+    "analysis_id": "aa0e7202108b4635b40c1c869f41aa45",
+    "created_at": "2026-09-08T08:52:19.405506+00:00",
+    "filename": "20260901_110839.jpg",
+    "wear_rate": null,
+    "predicted_wear_percent": null,
+    "average_similarity": null,
+    "detection_confidence": null,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "無法取得有效刀具 ROI，未執行影像檢索。",
+      "未偵測到刀具，請人工確認影像與框選區域。",
+      "排除自身後只有 0 筆有效案例，需完整 5 筆才能估算磨耗率。",
+      "目前無法計算相似案例的平均相似度。",
+      "目前無法計算相似案例的磨耗標準差。",
+      "目前沒有可用的磨耗率估算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": []
+  },
+  {
+    "id": "0060bdec5a464d2da52d1edab88caf0c",
+    "analysis_id": "0060bdec5a464d2da52d1edab88caf0c",
+    "created_at": "2026-09-08T08:52:11.290487+00:00",
+    "filename": "20260831_114918.jpg",
+    "wear_rate": null,
+    "predicted_wear_percent": null,
+    "average_similarity": null,
+    "detection_confidence": null,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "無法取得有效刀具 ROI，未執行影像檢索。",
+      "未偵測到刀具，請人工確認影像與框選區域。",
+      "排除自身後只有 0 筆有效案例，需完整 5 筆才能估算磨耗率。",
+      "目前無法計算相似案例的平均相似度。",
+      "目前無法計算相似案例的磨耗標準差。",
+      "目前沒有可用的磨耗率估算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": []
+  },
+  {
+    "id": "bc0d94fa9a1148839db0da00ad0e1474",
+    "analysis_id": "bc0d94fa9a1148839db0da00ad0e1474",
+    "created_at": "2026-09-08T08:52:02.024970+00:00",
+    "filename": "20260904_103904_mid.jpg",
+    "wear_rate": null,
+    "predicted_wear_percent": null,
+    "average_similarity": null,
+    "detection_confidence": null,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "無法取得有效刀具 ROI，未執行影像檢索。",
+      "未偵測到刀具，請人工確認影像與框選區域。",
+      "排除自身後只有 0 筆有效案例，需完整 5 筆才能估算磨耗率。",
+      "目前無法計算相似案例的平均相似度。",
+      "目前無法計算相似案例的磨耗標準差。",
+      "目前沒有可用的磨耗率估算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": []
+  },
+  {
+    "id": "e044370071dd499397f3b3edd52a224c",
+    "analysis_id": "e044370071dd499397f3b3edd52a224c",
+    "created_at": "2026-09-08T08:52:00.657864+00:00",
+    "filename": "20260904_103904_mid.jpg",
+    "wear_rate": null,
+    "predicted_wear_percent": null,
+    "average_similarity": null,
+    "detection_confidence": null,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "無法取得有效刀具 ROI，未執行影像檢索。",
+      "未偵測到刀具，請人工確認影像與框選區域。",
+      "排除自身後只有 0 筆有效案例，需完整 5 筆才能估算磨耗率。",
+      "目前無法計算相似案例的平均相似度。",
+      "目前無法計算相似案例的磨耗標準差。",
+      "目前沒有可用的磨耗率估算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": []
+  },
+  {
+    "id": "1e0c40e93ab1473a8dbd9c80cac1b7aa",
+    "analysis_id": "1e0c40e93ab1473a8dbd9c80cac1b7aa",
+    "created_at": "2026-09-08T08:45:35.462299+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.508236499186967,
+    "predicted_wear_percent": 50.8236499186967,
+    "average_similarity": 0.7459179711860646,
+    "detection_confidence": 0.838851809501648,
+    "status": "continue",
+    "status_label": "可持續觀察",
+    "reasons": [
+      "分析品質通過設定條件，預估磨耗率尚未達更換門檻。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-060-20260831_114318",
+      "WEAR-040-20260904_103904",
+      "WEAR-090-20260903_110533",
+      "WEAR-090-20260903_151143"
+    ]
+  },
+  {
+    "id": "707ae71dbc734518b4c534e81bfce698",
+    "analysis_id": "707ae71dbc734518b4c534e81bfce698",
+    "created_at": "2026-09-08T08:45:24.746705+00:00",
+    "filename": "20260831_114918_long.jpg",
+    "wear_rate": null,
+    "predicted_wear_percent": null,
+    "average_similarity": null,
+    "detection_confidence": null,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "無法取得有效刀具 ROI，未執行影像檢索。",
+      "未偵測到刀具，請人工確認影像與框選區域。",
+      "排除自身後只有 0 筆有效案例，需完整 5 筆才能估算磨耗率。",
+      "目前無法計算相似案例的平均相似度。",
+      "目前無法計算相似案例的磨耗標準差。",
+      "目前沒有可用的磨耗率估算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": []
+  },
+  {
+    "id": "e6bacba157de49f09dbf0a12b625e1ec",
+    "analysis_id": "e6bacba157de49f09dbf0a12b625e1ec",
+    "created_at": "2026-09-08T08:45:13.608624+00:00",
+    "filename": "20260904_103904_mid.jpg",
+    "wear_rate": null,
+    "predicted_wear_percent": null,
+    "average_similarity": null,
+    "detection_confidence": null,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "無法取得有效刀具 ROI，未執行影像檢索。",
+      "未偵測到刀具，請人工確認影像與框選區域。",
+      "排除自身後只有 0 筆有效案例，需完整 5 筆才能估算磨耗率。",
+      "目前無法計算相似案例的平均相似度。",
+      "目前無法計算相似案例的磨耗標準差。",
+      "目前沒有可用的磨耗率估算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": []
+  },
+  {
+    "id": "92fc81cefb1948369ee2a34eea47fc18",
+    "analysis_id": "92fc81cefb1948369ee2a34eea47fc18",
+    "created_at": "2026-09-08T08:31:16.690108+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.508236499186967,
+    "predicted_wear_percent": 50.8236499186967,
+    "average_similarity": 0.7459179711860646,
+    "detection_confidence": 0.838851809501648,
+    "status": "continue",
+    "status_label": "可持續觀察",
+    "reasons": [
+      "分析品質通過設定條件，預估磨耗率尚未達更換門檻。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-060-20260831_114318",
+      "WEAR-040-20260904_103904",
+      "WEAR-090-20260903_110533",
+      "WEAR-090-20260903_151143"
+    ]
+  },
+  {
+    "id": "dbbe770a7a9a4c75849de4b0cfe5aab9",
+    "analysis_id": "dbbe770a7a9a4c75849de4b0cfe5aab9",
+    "created_at": "2026-09-08T08:30:40.701197+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.508236499186967,
+    "predicted_wear_percent": 50.8236499186967,
+    "average_similarity": 0.7459179711860646,
+    "detection_confidence": 0.838851809501648,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "Top-5 磨耗標準差為 22.45 個百分點，超過設定上限 20；相似圖片的磨耗標籤差異較大，預估磨耗率僅供參考。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-060-20260831_114318",
+      "WEAR-040-20260904_103904",
+      "WEAR-090-20260903_110533",
+      "WEAR-090-20260903_151143"
+    ]
+  },
+  {
+    "id": "03639b43391046808b78fd1f402583b0",
+    "analysis_id": "03639b43391046808b78fd1f402583b0",
+    "created_at": "2026-09-08T08:28:31.115808+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.508236499186967,
+    "predicted_wear_percent": 50.8236499186967,
+    "average_similarity": 0.7459179711860646,
+    "detection_confidence": 0.838851809501648,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "相似案例磨耗差異過大或無法計算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-060-20260831_114318",
+      "WEAR-040-20260904_103904",
+      "WEAR-090-20260903_110533",
+      "WEAR-090-20260903_151143"
+    ]
+  },
+  {
+    "id": "da1f5e99e22e4ba1ba7e0ffe6d41123f",
+    "analysis_id": "da1f5e99e22e4ba1ba7e0ffe6d41123f",
+    "created_at": "2026-09-08T08:28:14.639873+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.508236499186967,
+    "predicted_wear_percent": 50.8236499186967,
+    "average_similarity": 0.7459179711860646,
+    "detection_confidence": 0.838851809501648,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "相似案例磨耗差異過大或無法計算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-060-20260831_114318",
+      "WEAR-040-20260904_103904",
+      "WEAR-090-20260903_110533",
+      "WEAR-090-20260903_151143"
+    ]
+  },
+  {
+    "id": "363f5573d42447d0a7a7ac380601dbb2",
+    "analysis_id": "363f5573d42447d0a7a7ac380601dbb2",
+    "created_at": "2026-09-08T08:27:53.555834+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.508236499186967,
+    "predicted_wear_percent": 50.8236499186967,
+    "average_similarity": 0.7459179711860646,
+    "detection_confidence": 0.838851809501648,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "相似案例的平均相似度不足。",
+      "相似案例磨耗差異過大或無法計算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-060-20260831_114318",
+      "WEAR-040-20260904_103904",
+      "WEAR-090-20260903_110533",
+      "WEAR-090-20260903_151143"
+    ]
+  },
+  {
+    "id": "eefb4004f7ec4cbfb8fd2fef3849b6a0",
+    "analysis_id": "eefb4004f7ec4cbfb8fd2fef3849b6a0",
+    "created_at": "2026-09-08T08:26:37.849533+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.508236499186967,
+    "predicted_wear_percent": 50.8236499186967,
+    "average_similarity": 0.7459179711860646,
+    "detection_confidence": 0.838851809501648,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "相似案例磨耗差異過大或無法計算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-060-20260831_114318",
+      "WEAR-040-20260904_103904",
+      "WEAR-090-20260903_110533",
+      "WEAR-090-20260903_151143"
+    ]
+  },
+  {
+    "id": "f5495e3ca42e4254a023224cf6304dd1",
+    "analysis_id": "f5495e3ca42e4254a023224cf6304dd1",
+    "created_at": "2026-09-08T08:24:23.054284+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.508236499186967,
+    "predicted_wear_percent": 50.8236499186967,
+    "average_similarity": 0.7459179711860646,
+    "detection_confidence": 0.838851809501648,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "相似案例的平均相似度不足。",
+      "相似案例磨耗差異過大或無法計算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_104109",
+      "WEAR-060-20260831_114318",
+      "WEAR-040-20260904_103904",
+      "WEAR-090-20260903_110533",
+      "WEAR-090-20260903_151143"
+    ]
+  },
+  {
+    "id": "22aaf76052714ae8bc43374db1af9571",
+    "analysis_id": "22aaf76052714ae8bc43374db1af9571",
+    "created_at": "2026-09-08T08:23:56.559480+00:00",
+    "filename": "20260826_152313.jpg",
+    "wear_rate": null,
+    "predicted_wear_percent": null,
+    "average_similarity": null,
+    "detection_confidence": null,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "無法取得有效刀具 ROI，未執行影像檢索。",
+      "未偵測到刀具，請人工確認影像與框選區域。",
+      "排除自身後只有 0 筆有效案例，需完整 5 筆才能估算磨耗率。",
+      "相似案例的平均相似度不足。",
+      "相似案例磨耗差異過大或無法計算。",
+      "目前沒有可用的磨耗率估算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": []
+  },
+  {
+    "id": "f16be40932ed4259ab049ceb1d158808",
+    "analysis_id": "f16be40932ed4259ab049ceb1d158808",
+    "created_at": "2026-09-08T08:22:55.696178+00:00",
+    "filename": "20260901_110301.jpg",
+    "wear_rate": 0.6923534358185377,
+    "predicted_wear_percent": 69.23534358185377,
+    "average_similarity": 0.6727517833704904,
+    "detection_confidence": 0.35779255628585815,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "刀具偵測信心度低於設定門檻。",
+      "相似案例的平均相似度不足。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_103904",
+      "WEAR-060-20260831_114318",
+      "WEAR-090-20260903_110617",
+      "WEAR-090-20260903_110533",
+      "WEAR-070-20260828_112119"
+    ]
+  },
+  {
+    "id": "20f84d63b3c34bd78afd2a6efd413ce7",
+    "analysis_id": "20f84d63b3c34bd78afd2a6efd413ce7",
+    "created_at": "2026-09-08T08:22:30.300756+00:00",
+    "filename": "20260824_160750.jpg",
+    "wear_rate": 0.6676828166722885,
+    "predicted_wear_percent": 66.76828166722885,
+    "average_similarity": 0.838117443756774,
+    "detection_confidence": 0.541130006313324,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "相似案例的平均相似度不足。",
+      "相似案例磨耗差異過大或無法計算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-090-20260903_110752",
+      "WEAR-090-20260903_110816",
+      "WEAR-050-20260827_153457",
+      "WEAR-030-20260831_114835",
+      "WEAR-010-20260902_140011"
+    ]
+  },
+  {
+    "id": "85a79bf56a0c442e89699988a7c7969b",
+    "analysis_id": "85a79bf56a0c442e89699988a7c7969b",
+    "created_at": "2026-09-08T08:22:03.888050+00:00",
+    "filename": "WEAR-070-20260824_110731.jpg",
+    "wear_rate": 0.5253487512733007,
+    "predicted_wear_percent": 52.534875127330075,
+    "average_similarity": 0.6381777293829838,
+    "detection_confidence": 0.4198906719684601,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "刀具偵測信心度低於設定門檻。",
+      "相似案例的平均相似度不足。",
+      "相似案例磨耗差異過大或無法計算。"
+    ],
+    "retrieval_mode": "dinov2_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135550",
+      "WEAR-090-20260903_110533",
+      "WEAR-060-20260831_114318",
+      "WEAR-050-20260827_153457",
+      "WEAR-030-20260831_114835"
+    ]
+  },
+  {
+    "id": "cc193c0971994223a9564f118ae3578d",
+    "analysis_id": "cc193c0971994223a9564f118ae3578d",
+    "created_at": "2026-09-08T08:11:19.929192+00:00",
+    "filename": "20260831_115114.jpg",
+    "wear_rate": 0.528348205901634,
+    "predicted_wear_percent": 52.834820590163396,
+    "average_similarity": 0.8898261499783832,
+    "detection_confidence": 0.755294144153595,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "相似案例磨耗差異過大或無法計算。"
+    ],
+    "retrieval_mode": "clip_full",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-070-20260825_151716",
+      "WEAR-030-20260831_114835",
+      "WEAR-030-20260824_160750",
+      "WEAR-090-20260903_150923",
+      "WEAR-040-20260828_160635"
+    ]
+  },
+  {
+    "id": "70cffc0a15f14ba9a59962ba8eda7b90",
+    "analysis_id": "70cffc0a15f14ba9a59962ba8eda7b90",
+    "created_at": "2026-09-08T08:09:46.139752+00:00",
+    "filename": "20260831_115114.jpg",
+    "wear_rate": 0.5214960788306131,
+    "predicted_wear_percent": 52.149607883061314,
+    "average_similarity": 0.854464455538966,
+    "detection_confidence": 0.755294144153595,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "相似案例磨耗差異過大或無法計算。"
+    ],
+    "retrieval_mode": "clip_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-030-20260824_160750",
+      "WEAR-090-20260903_150923",
+      "WEAR-040-20260902_135550",
+      "WEAR-090-20260903_110816",
+      "WEAR-010-20260902_140011"
+    ]
+  },
+  {
+    "id": "cc702e1de4854c25879597508140f53e",
+    "analysis_id": "cc702e1de4854c25879597508140f53e",
+    "created_at": "2026-09-08T08:07:23.995156+00:00",
+    "filename": "20260901_110301.jpg",
+    "wear_rate": 0.3856261785667823,
+    "predicted_wear_percent": 38.56261785667823,
+    "average_similarity": 0.8898920625927106,
+    "detection_confidence": 0.35779255628585815,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "刀具偵測信心度低於設定門檻。"
+    ],
+    "retrieval_mode": "clip_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260904_103904",
+      "WEAR-070-20260828_112243",
+      "WEAR-030-20260831_114835",
+      "WEAR-040-20260904_104109",
+      "WEAR-010-20260902_140011"
+    ]
+  },
+  {
+    "id": "4392378472b24d4cb8686a9296d2c365",
+    "analysis_id": "4392378472b24d4cb8686a9296d2c365",
+    "created_at": "2026-09-08T08:06:30.918489+00:00",
+    "filename": "20260824_160449.jpg",
+    "wear_rate": null,
+    "predicted_wear_percent": null,
+    "average_similarity": null,
+    "detection_confidence": null,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "無法取得有效刀具 ROI，未執行影像檢索。",
+      "未偵測到刀具，請人工確認影像與框選區域。",
+      "排除自身後只有 0 筆有效案例，需完整 5 筆才能估算磨耗率。",
+      "相似案例的平均相似度不足。",
+      "相似案例磨耗差異過大或無法計算。",
+      "目前沒有可用的磨耗率估算。"
+    ],
+    "retrieval_mode": "dinov3_roi",
+    "question": "",
+    "top_k_case_ids": []
+  },
+  {
+    "id": "6c22224e7cd24b788107889622f930d8",
+    "analysis_id": "6c22224e7cd24b788107889622f930d8",
+    "created_at": "2026-09-08T08:06:16.184470+00:00",
+    "filename": "20260824_160449.jpg",
+    "wear_rate": null,
+    "predicted_wear_percent": null,
+    "average_similarity": null,
+    "detection_confidence": null,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "無法取得有效刀具 ROI，未執行影像檢索。",
+      "未偵測到刀具，請人工確認影像與框選區域。",
+      "排除自身後只有 0 筆有效案例，需完整 5 筆才能估算磨耗率。",
+      "相似案例的平均相似度不足。",
+      "相似案例磨耗差異過大或無法計算。",
+      "目前沒有可用的磨耗率估算。"
+    ],
+    "retrieval_mode": "dinov3_roi",
+    "question": "",
+    "top_k_case_ids": []
+  },
+  {
+    "id": "4d32ecefa69a4d67a597ab929506ac8f",
+    "analysis_id": "4d32ecefa69a4d67a597ab929506ac8f",
+    "created_at": "2026-09-08T07:59:57.548053+00:00",
+    "filename": "20260824_110731.jpg",
+    "wear_rate": 0.5353328457678849,
+    "predicted_wear_percent": 53.53328457678849,
+    "average_similarity": 0.8723695382006709,
+    "detection_confidence": 0.4198906719684601,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "刀具偵測信心度低於設定門檻。",
+      "相似案例磨耗差異過大或無法計算。"
+    ],
+    "retrieval_mode": "clip_roi",
+    "question": "",
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135550",
+      "WEAR-070-20260828_112119",
+      "WEAR-060-20260831_114318",
+      "WEAR-010-20260902_140011",
+      "WEAR-090-20260903_110533"
+    ]
+  },
+  {
+    "id": "14247a1d77d4413aac4d851ad276432a",
+    "analysis_id": "14247a1d77d4413aac4d851ad276432a",
+    "created_at": "2026-09-08T07:59:20.856072+00:00",
+    "filename": "20260824_110424.jpg",
+    "wear_rate": null,
+    "predicted_wear_percent": null,
+    "average_similarity": null,
+    "detection_confidence": null,
+    "status": "manual_review",
+    "status_label": "需人工覆核",
+    "reasons": [
+      "無法取得有效刀具 ROI，未執行影像檢索。",
+      "未偵測到刀具，請人工確認影像與框選區域。",
+      "排除自身後只有 0 筆有效案例，需完整 5 筆才能估算磨耗率。",
+      "相似案例的平均相似度不足。",
+      "相似案例磨耗差異過大或無法計算。",
+      "目前沒有可用的磨耗率估算。"
+    ],
+    "retrieval_mode": "clip_roi",
+    "question": "",
+    "top_k_case_ids": []
+  },
+  {
+    "id": "cea8f6f0",
+    "created_at": "2026-09-07T03:05:45.210884+00:00",
+    "filename": "20260824_160750.jpg",
+    "wear_rate": 0.718,
+    "confidence": 0.942,
+    "tool_class": "insert",
+    "detection_confidence": 0.842,
+    "wear_std": 0.223,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-080-20260826_104444",
+      "WEAR-030-20260831_114835",
+      "WEAR-090-20260903_110816",
+      "WEAR-090-20260903_110752",
+      "WEAR-070-20260828_112119"
+    ]
+  },
+  {
+    "id": "ab4924ef",
+    "created_at": "2026-09-07T03:04:53.957149+00:00",
+    "filename": "20260831_114835.jpg",
+    "wear_rate": 0.73,
+    "confidence": 0.936,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.224,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-030-20260824_160750",
+      "WEAR-090-20260903_110816",
+      "WEAR-080-20260826_104444",
+      "WEAR-090-20260903_110752",
+      "WEAR-080-20260826_104337"
+    ]
+  },
+  {
+    "id": "be40dd51",
+    "created_at": "2026-09-06T14:05:26.056886+00:00",
+    "filename": "20260824_160750.jpg",
+    "wear_rate": 0.718,
+    "confidence": 0.942,
+    "tool_class": "insert",
+    "detection_confidence": 0.842,
+    "wear_std": 0.223,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-080-20260826_104444",
+      "WEAR-030-20260831_114835",
+      "WEAR-090-20260903_110816",
+      "WEAR-090-20260903_110752",
+      "WEAR-070-20260828_112119"
+    ]
+  },
+  {
+    "id": "42117138",
+    "created_at": "2026-09-06T14:05:14.485652+00:00",
+    "filename": "20260827_153457.jpg",
+    "wear_rate": 0.511,
+    "confidence": 0.94,
+    "tool_class": "insert",
+    "detection_confidence": 0.294,
+    "wear_std": 0.214,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-050-20260827_153603",
+      "WEAR-040-20260828_112524",
+      "WEAR-020-20260824_111730",
+      "WEAR-070-20260828_112243",
+      "WEAR-080-20260826_104444"
+    ]
+  },
+  {
+    "id": "acf1f7c8",
+    "created_at": "2026-09-06T14:05:01.851598+00:00",
+    "filename": "20260824_160449.jpg",
+    "wear_rate": 0.556,
+    "confidence": 0.949,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.314,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-090-20260826_152344",
+      "WEAR-090-20260826_152313",
+      "WEAR-020-20260824_111730",
+      "WEAR-020-20260824_111355",
+      "WEAR-050-20260827_153603"
+    ]
+  },
+  {
+    "id": "7f7efb13",
+    "created_at": "2026-09-06T14:04:47.283108+00:00",
+    "filename": "20260831_114140.jpg",
+    "wear_rate": 0.689,
+    "confidence": 0.937,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.19,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-060-20260831_114318",
+      "WEAR-090-20260825_151905",
+      "WEAR-040-20260902_135550",
+      "WEAR-070-20260824_155728",
+      "WEAR-090-20260825_151947"
+    ]
+  },
+  {
+    "id": "a99281f8",
+    "created_at": "2026-09-06T14:04:39.089992+00:00",
+    "filename": "20260831_114427.jpg",
+    "wear_rate": 0.34,
+    "confidence": 0.921,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.049,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135056",
+      "WEAR-030-20260901_110301",
+      "WEAR-030-20260824_160750",
+      "WEAR-030-20260831_114835",
+      "WEAR-040-20260904_103904"
+    ]
+  },
+  {
+    "id": "dc5e5c6f",
+    "created_at": "2026-09-06T14:04:28.962361+00:00",
+    "filename": "20260903_110752.jpg",
+    "wear_rate": 0.779,
+    "confidence": 0.953,
+    "tool_class": "insert",
+    "detection_confidence": 0.446,
+    "wear_std": 0.233,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-090-20260903_110816",
+      "WEAR-080-20260826_104444",
+      "WEAR-090-20260826_152344",
+      "WEAR-090-20260903_150923",
+      "WEAR-030-20260824_160750"
+    ]
+  },
+  {
+    "id": "8a87d36a",
+    "created_at": "2026-09-06T14:04:20.758519+00:00",
+    "filename": "20260903_151118.jpg",
+    "wear_rate": 0.691,
+    "confidence": 0.892,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.245,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-090-20260903_151143",
+      "WEAR-090-20260903_150923",
+      "WEAR-040-20260902_135550",
+      "WEAR-040-20260828_160635",
+      "WEAR-040-20260826_104031"
+    ]
+  },
+  {
+    "id": "7e78aa52",
+    "created_at": "2026-09-06T14:04:13.037807+00:00",
+    "filename": "20260903_150923.jpg",
+    "wear_rate": 0.728,
+    "confidence": 0.939,
+    "tool_class": "insert",
+    "detection_confidence": 0.593,
+    "wear_std": 0.312,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-090-20260826_152344",
+      "WEAR-090-20260903_110752",
+      "WEAR-090-20260903_110816",
+      "WEAR-010-20260902_140011",
+      "WEAR-080-20260826_104444"
+    ]
+  },
+  {
+    "id": "bdc1db8d",
+    "created_at": "2026-09-06T14:02:55.963860+00:00",
+    "filename": "20260826_152313.jpg",
+    "wear_rate": 0.439,
+    "confidence": 0.958,
+    "tool_class": "insert",
+    "detection_confidence": 0.345,
+    "wear_std": 0.261,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-090-20260826_152344",
+      "WEAR-020-20260824_111355",
+      "WEAR-030-20260824_160449",
+      "WEAR-020-20260824_111730",
+      "WEAR-040-20260828_112524"
+    ]
+  },
+  {
+    "id": "760a874d",
+    "created_at": "2026-09-06T13:27:43.251777+00:00",
+    "filename": "20260903_150923.jpg",
+    "wear_rate": 0.728,
+    "confidence": 0.939,
+    "tool_class": "insert",
+    "detection_confidence": 0.593,
+    "wear_std": 0.312,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-090-20260826_152344",
+      "WEAR-090-20260903_110752",
+      "WEAR-090-20260903_110816",
+      "WEAR-010-20260902_140011",
+      "WEAR-080-20260826_104444"
+    ]
+  },
+  {
+    "id": "2e96691e",
+    "created_at": "2026-09-06T12:53:01.693762+00:00",
+    "filename": "20260825_151905.jpg",
+    "wear_rate": 0.695,
+    "confidence": 0.958,
+    "tool_class": "insert",
+    "detection_confidence": 0.289,
+    "wear_std": 0.16,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-090-20260825_151947",
+      "WEAR-070-20260824_155728",
+      "WEAR-040-20260826_104031",
+      "WEAR-070-20260828_112243",
+      "WEAR-070-20260824_110424"
+    ]
+  },
+  {
+    "id": "35031bf4",
+    "created_at": "2026-09-06T12:50:30.065255+00:00",
+    "filename": "WEAR-070-20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.12,
+    "question": "這把刀目前狀況如何？",
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135735",
+      "WEAR-070-20260824_155728",
+      "WEAR-070-20260828_160228",
+      "WEAR-070-20260824_110731",
+      "WEAR-070-20260827_153216"
+    ]
+  },
+  {
+    "id": "678e94c4",
+    "created_at": "2026-09-06T12:48:54.309643+00:00",
+    "filename": "WEAR-070-20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.12,
+    "question": "這把刀目前狀況如何？",
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135735",
+      "WEAR-070-20260824_155728",
+      "WEAR-070-20260828_160228",
+      "WEAR-070-20260824_110731",
+      "WEAR-070-20260827_153216"
+    ]
+  },
+  {
+    "id": "8593f04c",
+    "created_at": "2026-09-06T12:30:06.166956+00:00",
+    "filename": "20260903_150923.jpg",
+    "wear_rate": 0.728,
+    "confidence": 0.939,
+    "tool_class": "insert",
+    "detection_confidence": 0.593,
+    "wear_std": 0.312,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-090-20260826_152344",
+      "WEAR-090-20260903_110752",
+      "WEAR-090-20260903_110816",
+      "WEAR-010-20260902_140011",
+      "WEAR-080-20260826_104444"
+    ]
+  },
+  {
+    "id": "f304e7f2",
+    "created_at": "2026-09-06T12:29:32.803746+00:00",
+    "filename": "WEAR-070-20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.12,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135735",
+      "WEAR-070-20260824_155728",
+      "WEAR-070-20260828_160228",
+      "WEAR-070-20260824_110731",
+      "WEAR-070-20260827_153216"
+    ]
+  },
+  {
+    "id": "0388868e",
+    "created_at": "2026-09-06T12:28:05.431221+00:00",
+    "filename": "20260825_151905.jpg",
+    "wear_rate": 0.695,
+    "confidence": 0.958,
+    "tool_class": "insert",
+    "detection_confidence": 0.289,
+    "wear_std": 0.16,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-090-20260825_151947",
+      "WEAR-070-20260824_155728",
+      "WEAR-040-20260826_104031",
+      "WEAR-070-20260828_112243",
+      "WEAR-070-20260824_110424"
+    ]
+  },
+  {
+    "id": "b97d3bac",
+    "created_at": "2026-09-06T12:20:24.328169+00:00",
+    "filename": "20260903_151118.jpg",
+    "wear_rate": 0.691,
+    "confidence": 0.892,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.245,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-090-20260903_151143",
+      "WEAR-090-20260903_150923",
+      "WEAR-040-20260902_135550",
+      "WEAR-040-20260828_160635",
+      "WEAR-040-20260826_104031"
+    ]
+  },
+  {
+    "id": "64c178fe",
+    "created_at": "2026-09-06T11:48:37.219481+00:00",
+    "filename": "WEAR-070-20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.12,
+    "question": "這把刀還可以繼續使用嗎？",
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135735",
+      "WEAR-070-20260824_155728",
+      "WEAR-070-20260828_160228",
+      "WEAR-070-20260824_110731",
+      "WEAR-070-20260827_153216"
+    ]
+  },
+  {
+    "id": "d9a1741b",
+    "created_at": "2026-09-06T11:47:50.540550+00:00",
+    "filename": "WEAR-070-20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.12,
+    "question": null,
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135735",
+      "WEAR-070-20260824_155728",
+      "WEAR-070-20260828_160228",
+      "WEAR-070-20260824_110731",
+      "WEAR-070-20260827_153216"
+    ]
+  },
+  {
+    "id": "4784ac89",
+    "created_at": "2026-09-06T11:42:40.444853+00:00",
+    "filename": "WEAR-070-20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.12,
+    "question": "這把刀還可以繼續使用嗎？",
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135735",
+      "WEAR-070-20260824_155728",
+      "WEAR-070-20260828_160228",
+      "WEAR-070-20260824_110731",
+      "WEAR-070-20260827_153216"
+    ]
+  },
+  {
+    "id": "873badd4",
+    "created_at": "2026-09-06T11:36:37.912670+00:00",
+    "filename": "20260903_110752.jpg",
+    "wear_rate": 0.779,
+    "confidence": 0.953,
+    "tool_class": "insert",
+    "detection_confidence": 0.446,
+    "wear_std": 0.233,
+    "top_k_case_ids": [
+      "WEAR-090-20260903_110816",
+      "WEAR-080-20260826_104444",
+      "WEAR-090-20260826_152344",
+      "WEAR-090-20260903_150923",
+      "WEAR-030-20260824_160750"
+    ]
+  },
+  {
+    "id": "075060a2",
+    "created_at": "2026-09-06T11:36:24.426540+00:00",
+    "filename": "20260903_151143.jpg",
+    "wear_rate": 0.756,
+    "confidence": 0.896,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.245,
+    "top_k_case_ids": [
+      "WEAR-090-20260903_151118",
+      "WEAR-090-20260903_150923",
+      "WEAR-040-20260828_160635",
+      "WEAR-040-20260902_135550",
+      "WEAR-090-20260903_110816"
+    ]
+  },
+  {
+    "id": "6e9342b8",
+    "created_at": "2026-09-06T11:35:09.326564+00:00",
+    "filename": "20260903_151118.jpg",
+    "wear_rate": 0.691,
+    "confidence": 0.892,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.245,
+    "top_k_case_ids": [
+      "WEAR-090-20260903_151143",
+      "WEAR-090-20260903_150923",
+      "WEAR-040-20260902_135550",
+      "WEAR-040-20260828_160635",
+      "WEAR-040-20260826_104031"
+    ]
+  },
+  {
+    "id": "94e71669",
+    "created_at": "2026-09-06T11:35:09.118507+00:00",
+    "filename": "20260825_151905.jpg",
+    "wear_rate": 0.695,
+    "confidence": 0.958,
+    "tool_class": "insert",
+    "detection_confidence": 0.289,
+    "wear_std": 0.16,
+    "top_k_case_ids": [
+      "WEAR-090-20260825_151947",
+      "WEAR-070-20260824_155728",
+      "WEAR-040-20260826_104031",
+      "WEAR-070-20260828_112243",
+      "WEAR-070-20260824_110424"
+    ]
+  },
+  {
+    "id": "8cb5e159",
+    "created_at": "2026-09-06T11:30:43.112510+00:00",
+    "filename": "WEAR-070-20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.12,
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135735",
+      "WEAR-070-20260824_155728",
+      "WEAR-070-20260828_160228",
+      "WEAR-070-20260824_110731",
+      "WEAR-070-20260827_153216"
+    ]
+  },
+  {
+    "id": "41da2dfb",
+    "created_at": "2026-09-06T11:24:39.263957+00:00",
+    "filename": "WEAR-070-20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.12,
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135735",
+      "WEAR-070-20260824_155728",
+      "WEAR-070-20260828_160228",
+      "WEAR-070-20260824_110731",
+      "WEAR-070-20260827_153216"
+    ]
+  },
+  {
+    "id": "acdfa6ae",
+    "created_at": "2026-09-06T11:23:46.781751+00:00",
+    "filename": "WEAR-070-20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.12,
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135735",
+      "WEAR-070-20260824_155728",
+      "WEAR-070-20260828_160228",
+      "WEAR-070-20260824_110731",
+      "WEAR-070-20260827_153216"
+    ]
+  },
+  {
+    "id": "b9bb7f69",
+    "created_at": "2026-09-06T11:15:09.606264+00:00",
+    "filename": "WEAR-070-20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.12,
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135735",
+      "WEAR-070-20260824_155728",
+      "WEAR-070-20260828_160228",
+      "WEAR-070-20260824_110731",
+      "WEAR-070-20260827_153216"
+    ]
+  },
+  {
+    "id": "73eacd73",
+    "created_at": "2026-09-06T06:43:21.980623+00:00",
+    "filename": "20260826_152313.jpg",
+    "wear_rate": 0.439,
+    "confidence": 0.958,
+    "tool_class": "insert",
+    "detection_confidence": 0.345,
+    "wear_std": 0.261,
+    "top_k_case_ids": [
+      "WEAR-090-20260826_152344",
+      "WEAR-020-20260824_111355",
+      "WEAR-030-20260824_160449",
+      "WEAR-020-20260824_111730",
+      "WEAR-040-20260828_112524"
+    ]
+  },
+  {
+    "id": "d744ba3f",
+    "created_at": "2026-09-06T06:40:29.734752+00:00",
+    "filename": "20260903_150923.jpg",
+    "wear_rate": 0.728,
+    "confidence": 0.939,
+    "tool_class": "insert",
+    "detection_confidence": 0.593,
+    "wear_std": 0.312,
+    "top_k_case_ids": [
+      "WEAR-090-20260826_152344",
+      "WEAR-090-20260903_110752",
+      "WEAR-090-20260903_110816",
+      "WEAR-010-20260902_140011",
+      "WEAR-080-20260826_104444"
+    ]
+  },
+  {
+    "id": "1de611c7",
+    "created_at": "2026-09-06T06:39:11.617028+00:00",
+    "filename": "20260826_152313.jpg",
+    "wear_rate": 0.439,
+    "confidence": 0.958,
+    "tool_class": "insert",
+    "detection_confidence": 0.345,
+    "wear_std": 0.261,
+    "top_k_case_ids": [
+      "WEAR-090-20260826_152344",
+      "WEAR-020-20260824_111355",
+      "WEAR-030-20260824_160449",
+      "WEAR-020-20260824_111730",
+      "WEAR-040-20260828_112524"
+    ]
+  },
+  {
+    "id": "001ac0dc",
+    "created_at": "2026-09-06T06:38:59.469339+00:00",
+    "filename": "20260828_160352.jpg",
+    "wear_rate": 0.562,
+    "confidence": 0.879,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.258,
+    "top_k_case_ids": [
+      "WEAR-100-20260901_111426",
+      "WEAR-040-20260902_135056",
+      "WEAR-040-20260826_104031",
+      "WEAR-030-20260901_110301",
+      "WEAR-070-20260828_112119"
+    ]
+  },
+  {
+    "id": "f58c3ba4",
+    "created_at": "2026-09-06T06:38:46.770912+00:00",
+    "filename": "20260828_160352.jpg",
+    "wear_rate": 0.562,
+    "confidence": 0.879,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.258,
+    "top_k_case_ids": [
+      "WEAR-100-20260901_111426",
+      "WEAR-040-20260902_135056",
+      "WEAR-040-20260826_104031",
+      "WEAR-030-20260901_110301",
+      "WEAR-070-20260828_112119"
+    ]
+  },
+  {
+    "id": "67d36f7a",
+    "created_at": "2026-09-06T06:38:37.570166+00:00",
+    "filename": "20260828_160352.jpg",
+    "wear_rate": 0.562,
+    "confidence": 0.879,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.258,
+    "top_k_case_ids": [
+      "WEAR-100-20260901_111426",
+      "WEAR-040-20260902_135056",
+      "WEAR-040-20260826_104031",
+      "WEAR-030-20260901_110301",
+      "WEAR-070-20260828_112119"
+    ]
+  },
+  {
+    "id": "95b5cb54",
+    "created_at": "2026-09-06T06:38:24.836426+00:00",
+    "filename": "20260824_110902.jpg",
+    "wear_rate": 0.638,
+    "confidence": 0.94,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.12,
+    "top_k_case_ids": [
+      "WEAR-070-20260827_153216",
+      "WEAR-040-20260902_135735",
+      "WEAR-070-20260824_110424",
+      "WEAR-070-20260824_155728",
+      "WEAR-070-20260827_152948"
+    ]
+  },
+  {
+    "id": "7e567cb0",
+    "created_at": "2026-09-06T06:38:14.419243+00:00",
+    "filename": "20260831_115114.jpg",
+    "wear_rate": 0.528,
+    "confidence": 0.89,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.24,
+    "top_k_case_ids": [
+      "WEAR-070-20260825_151716",
+      "WEAR-030-20260831_114835",
+      "WEAR-030-20260824_160750",
+      "WEAR-090-20260903_150923",
+      "WEAR-040-20260828_160635"
+    ]
+  },
+  {
+    "id": "510d5f50",
+    "created_at": "2026-09-06T06:38:07.738717+00:00",
+    "filename": "20260831_114835.jpg",
+    "wear_rate": 0.73,
+    "confidence": 0.936,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.224,
+    "top_k_case_ids": [
+      "WEAR-030-20260824_160750",
+      "WEAR-090-20260903_110816",
+      "WEAR-080-20260826_104444",
+      "WEAR-090-20260903_110752",
+      "WEAR-080-20260826_104337"
+    ]
+  },
+  {
+    "id": "15dcafdd",
+    "created_at": "2026-09-06T06:37:58.692929+00:00",
+    "filename": "20260904_105327.jpg",
+    "wear_rate": 0.71,
+    "confidence": 0.759,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.325,
+    "top_k_case_ids": [
+      "WEAR-010-20260902_140011",
+      "WEAR-090-20260826_152344",
+      "WEAR-070-20260825_151716",
+      "WEAR-100-20260901_111426",
+      "WEAR-090-20260825_151947"
+    ]
+  },
+  {
+    "id": "4772ab9d",
+    "created_at": "2026-09-06T06:37:50.626369+00:00",
+    "filename": "20260826_104204.jpg",
+    "wear_rate": 0.75,
+    "confidence": 0.92,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.185,
+    "top_k_case_ids": [
+      "WEAR-080-20260825_103248",
+      "WEAR-040-20260826_104031",
+      "WEAR-090-20260825_151947",
+      "WEAR-090-20260825_151905",
+      "WEAR-080-20260825_103207"
+    ]
+  },
+  {
+    "id": "f5083c54",
+    "created_at": "2026-09-06T06:37:39.292388+00:00",
+    "filename": "20260831_114427.jpg",
+    "wear_rate": 0.34,
+    "confidence": 0.921,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.049,
+    "top_k_case_ids": [
+      "WEAR-040-20260902_135056",
+      "WEAR-030-20260901_110301",
+      "WEAR-030-20260824_160750",
+      "WEAR-030-20260831_114835",
+      "WEAR-040-20260904_103904"
+    ]
+  },
+  {
+    "id": "ed9692d1",
+    "created_at": "2026-09-06T06:37:30.030377+00:00",
+    "filename": "20260831_114140.jpg",
+    "wear_rate": 0.689,
+    "confidence": 0.937,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.19,
+    "top_k_case_ids": [
+      "WEAR-060-20260831_114318",
+      "WEAR-090-20260825_151905",
+      "WEAR-040-20260902_135550",
+      "WEAR-070-20260824_155728",
+      "WEAR-090-20260825_151947"
+    ]
+  },
+  {
+    "id": "8bc806d9",
+    "created_at": "2026-09-06T06:37:11.271292+00:00",
+    "filename": "20260827_153603.jpg",
+    "wear_rate": 0.454,
+    "confidence": 0.946,
+    "tool_class": "insert",
+    "detection_confidence": 0.625,
+    "wear_std": 0.242,
+    "top_k_case_ids": [
+      "WEAR-050-20260827_153457",
+      "WEAR-020-20260824_111730",
+      "WEAR-040-20260828_112524",
+      "WEAR-090-20260826_152344",
+      "WEAR-030-20260824_160449"
+    ]
+  },
+  {
+    "id": "baf6995d",
+    "created_at": "2026-09-06T06:37:02.696072+00:00",
+    "filename": "20260901_111426.jpg",
+    "wear_rate": 0.479,
+    "confidence": 0.916,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.349,
+    "top_k_case_ids": [
+      "WEAR-020-20260824_111355",
+      "WEAR-090-20260826_152313",
+      "WEAR-090-20260903_110752",
+      "WEAR-010-20260902_140011",
+      "WEAR-030-20260824_160449"
+    ]
+  },
+  {
+    "id": "00c4e946",
+    "created_at": "2026-09-06T06:36:44.263525+00:00",
+    "filename": "20260824_111355.jpg",
+    "wear_rate": 0.626,
+    "confidence": 0.953,
+    "tool_class": "insert",
+    "detection_confidence": 0.565,
+    "wear_std": 0.297,
+    "top_k_case_ids": [
+      "WEAR-090-20260826_152313",
+      "WEAR-090-20260826_152344",
+      "WEAR-070-20260827_152948",
+      "WEAR-030-20260824_160449",
+      "WEAR-020-20260824_111730"
+    ]
+  },
+  {
+    "id": "718ce2d8",
+    "created_at": "2026-09-06T06:36:16.480177+00:00",
+    "filename": "20260826_104337.jpg",
+    "wear_rate": 0.589,
+    "confidence": 0.919,
+    "tool_class": "insert",
+    "detection_confidence": 0.611,
+    "wear_std": 0.253,
+    "top_k_case_ids": [
+      "WEAR-080-20260826_104444",
+      "WEAR-030-20260831_114835",
+      "WEAR-030-20260824_160750",
+      "WEAR-090-20260903_110816",
+      "WEAR-070-20260825_151716"
+    ]
+  },
+  {
+    "id": "ee279884",
+    "created_at": "2026-09-06T06:36:02.750238+00:00",
+    "filename": "20260825_103248.jpg",
+    "wear_rate": 0.649,
+    "confidence": 0.93,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.215,
+    "top_k_case_ids": [
+      "WEAR-080-20260825_103207",
+      "WEAR-040-20260826_104031",
+      "WEAR-040-20260826_104204",
+      "WEAR-090-20260825_151947",
+      "WEAR-080-20260826_151927"
+    ]
+  },
+  {
+    "id": "7f7b3354",
+    "created_at": "2026-09-06T06:36:02.616124+00:00",
+    "filename": "20260825_103207.jpg",
+    "wear_rate": 0.652,
+    "confidence": 0.924,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.196,
+    "top_k_case_ids": [
+      "WEAR-080-20260825_103248",
+      "WEAR-040-20260826_104031",
+      "WEAR-080-20260826_151927",
+      "WEAR-080-20260826_152132",
+      "WEAR-040-20260826_104204"
+    ]
+  },
+  {
+    "id": "ca1170bf",
+    "created_at": "2026-09-06T06:36:02.333133+00:00",
+    "filename": "20260825_103207.jpg",
+    "wear_rate": 0.652,
+    "confidence": 0.924,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.196,
+    "top_k_case_ids": [
+      "WEAR-080-20260825_103248",
+      "WEAR-040-20260826_104031",
+      "WEAR-080-20260826_151927",
+      "WEAR-080-20260826_152132",
+      "WEAR-040-20260826_104204"
+    ]
+  },
+  {
+    "id": "9a287671",
+    "created_at": "2026-09-06T06:31:44.149349+00:00",
+    "filename": "20260826_104444.jpg",
+    "wear_rate": 0.617,
+    "confidence": 0.944,
+    "tool_class": "insert",
+    "detection_confidence": 0.705,
+    "wear_std": 0.349,
+    "top_k_case_ids": [
+      "WEAR-030-20260824_160750",
+      "WEAR-090-20260903_110752",
+      "WEAR-090-20260903_110816",
+      "WEAR-090-20260826_152344",
+      "WEAR-010-20260902_140011"
+    ]
+  },
+  {
+    "id": "15026316",
+    "created_at": "2026-09-06T06:31:10.436218+00:00",
+    "filename": "20260825_103207.jpg",
+    "wear_rate": 0.652,
+    "confidence": 0.924,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.196,
+    "top_k_case_ids": [
+      "WEAR-080-20260825_103248",
+      "WEAR-040-20260826_104031",
+      "WEAR-080-20260826_151927",
+      "WEAR-080-20260826_152132",
+      "WEAR-040-20260826_104204"
+    ]
+  },
+  {
+    "id": "38cd8a3f",
+    "created_at": "2026-09-06T06:30:59.028113+00:00",
+    "filename": "20260831_114140.jpg",
+    "wear_rate": 0.689,
+    "confidence": 0.937,
+    "tool_class": null,
+    "detection_confidence": null,
+    "wear_std": 0.19,
+    "top_k_case_ids": [
+      "WEAR-060-20260831_114318",
+      "WEAR-090-20260825_151905",
+      "WEAR-040-20260902_135550",
+      "WEAR-070-20260824_155728",
+      "WEAR-090-20260825_151947"
+    ]
+  },
+  {
+    "id": "958ef71a",
+    "created_at": "2026-09-06T06:30:03.820180+00:00",
+    "filename": "20260827_153457.jpg",
+    "wear_rate": 0.511,
+    "confidence": 0.94,
+    "tool_class": "insert",
+    "detection_confidence": 0.294,
+    "wear_std": 0.214,
+    "top_k_case_ids": [
+      "WEAR-050-20260827_153603",
+      "WEAR-040-20260828_112524",
+      "WEAR-020-20260824_111730",
+      "WEAR-070-20260828_112243",
+      "WEAR-080-20260826_104444"
+    ]
+  },
+  {
+    "id": "d18621e2",
+    "created_at": "2026-09-06T06:30:03.658259+00:00",
+    "filename": "20260827_153603.jpg",
+    "wear_rate": 0.454,
+    "confidence": 0.946,
+    "tool_class": "insert",
+    "detection_confidence": 0.625,
+    "wear_std": 0.242,
+    "top_k_case_ids": [
+      "WEAR-050-20260827_153457",
+      "WEAR-020-20260824_111730",
+      "WEAR-040-20260828_112524",
+      "WEAR-090-20260826_152344",
+      "WEAR-030-20260824_160449"
+    ]
+  },
+  {
+    "id": "a613acce",
+    "created_at": "2026-09-06T06:22:42.348013+00:00",
+    "filename": "20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955
+  },
+  {
+    "id": "f268ee04",
+    "created_at": "2026-09-06T06:21:52.719329+00:00",
+    "filename": "20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955
+  },
+  {
+    "id": "51955aa3",
+    "created_at": "2026-09-06T05:31:03.231741+00:00",
+    "filename": "20260827_153603.jpg",
+    "wear_rate": 0.454,
+    "confidence": 0.946
+  },
+  {
+    "id": "e99ab703",
+    "created_at": "2026-09-06T05:28:59.860968+00:00",
+    "filename": "20260824_111730.jpg",
+    "wear_rate": 0.556,
+    "confidence": 0.946
+  },
+  {
+    "id": "a9edd173",
+    "created_at": "2026-09-06T05:28:49.728426+00:00",
+    "filename": "20260902_140011.jpg",
+    "wear_rate": 0.742,
+    "confidence": 0.938
+  },
+  {
+    "id": "30cf6d6e",
+    "created_at": "2026-09-06T05:28:35.151269+00:00",
+    "filename": "20260824_110731.jpg",
+    "wear_rate": 0.701,
+    "confidence": 0.947
+  },
+  {
+    "id": "69156c2f",
+    "created_at": "2026-09-06T05:28:20.490713+00:00",
+    "filename": "20260902_135056.jpg",
+    "wear_rate": 0.397,
+    "confidence": 0.928
+  },
+  {
+    "id": "33c469e8",
+    "created_at": "2026-09-06T05:28:01.214875+00:00",
+    "filename": "20260904_105327.jpg",
+    "wear_rate": 0.71,
+    "confidence": 0.759
+  },
+  {
+    "id": "e6e35877",
+    "created_at": "2026-09-06T05:27:51.156428+00:00",
+    "filename": "20260904_104109.jpg",
+    "wear_rate": 0.66,
+    "confidence": 0.935
+  },
+  {
+    "id": "0e03b181",
+    "created_at": "2026-09-06T05:27:21.430315+00:00",
+    "filename": "20260825_103408.jpg",
+    "wear_rate": 0.507,
+    "confidence": 0.91
+  },
+  {
+    "id": "d198d603",
+    "created_at": "2026-09-06T05:27:01.876495+00:00",
+    "filename": "20260901_111426.jpg",
+    "wear_rate": 0.479,
+    "confidence": 0.916
+  },
+  {
+    "id": "99aaf8af",
+    "created_at": "2026-09-06T05:26:29.391952+00:00",
+    "filename": "20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955
+  },
+  {
+    "id": "d3e5be0f",
+    "created_at": "2026-09-06T05:25:49.851777+00:00",
+    "filename": "20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955
+  },
+  {
+    "id": "2ef73f3e",
+    "created_at": "2026-09-06T05:25:49.754376+00:00",
+    "filename": "20260824_110424.jpg",
+    "wear_rate": 0.636,
+    "confidence": 0.955
+  }
+]

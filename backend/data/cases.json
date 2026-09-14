@@ -1,0 +1,394 @@
+[
+  {
+    "id": "WEAR-070-20260824_110424",
+    "image": "data/wear_percent_cases/20260824_110424.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-070-20260824_110731",
+    "image": "data/wear_percent_cases/20260824_110731.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-070-20260824_110902",
+    "image": "data/wear_percent_cases/20260824_110902.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-020-20260824_111355",
+    "image": "data/wear_percent_cases/20260824_111355.jpg",
+    "wear_rate": 0.2,
+    "wear_percent": 20,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-020-20260824_111730",
+    "image": "data/wear_percent_cases/20260824_111730.jpg",
+    "wear_rate": 0.2,
+    "wear_percent": 20,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-070-20260824_155540",
+    "image": "data/wear_percent_cases/20260824_155540.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-070-20260824_155728",
+    "image": "data/wear_percent_cases/20260824_155728.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-030-20260824_160449",
+    "image": "data/wear_percent_cases/20260824_160449.jpg",
+    "wear_rate": 0.3,
+    "wear_percent": 30,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-030-20260824_160750",
+    "image": "data/wear_percent_cases/20260824_160750.jpg",
+    "wear_rate": 0.3,
+    "wear_percent": 30,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-080-20260825_103207",
+    "image": "data/wear_percent_cases/20260825_103207.jpg",
+    "wear_rate": 0.8,
+    "wear_percent": 80,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-080-20260825_103248",
+    "image": "data/wear_percent_cases/20260825_103248.jpg",
+    "wear_rate": 0.8,
+    "wear_percent": 80,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-040-20260825_103408",
+    "image": "data/wear_percent_cases/20260825_103408.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-040-20260825_103446",
+    "image": "data/wear_percent_cases/20260825_103446.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-070-20260825_151557",
+    "image": "data/wear_percent_cases/20260825_151557.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-070-20260825_151716",
+    "image": "data/wear_percent_cases/20260825_151716.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-090-20260825_151905",
+    "image": "data/wear_percent_cases/20260825_151905.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-090-20260825_151947",
+    "image": "data/wear_percent_cases/20260825_151947.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-040-20260826_104031",
+    "image": "data/wear_percent_cases/20260826_104031.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-040-20260826_104204",
+    "image": "data/wear_percent_cases/20260826_104204.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-080-20260826_104337",
+    "image": "data/wear_percent_cases/20260826_104337.jpg",
+    "wear_rate": 0.8,
+    "wear_percent": 80,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-080-20260826_104444",
+    "image": "data/wear_percent_cases/20260826_104444.jpg",
+    "wear_rate": 0.8,
+    "wear_percent": 80,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-080-20260826_151927",
+    "image": "data/wear_percent_cases/20260826_151927.jpg",
+    "wear_rate": 0.8,
+    "wear_percent": 80,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-080-20260826_152132",
+    "image": "data/wear_percent_cases/20260826_152132.jpg",
+    "wear_rate": 0.8,
+    "wear_percent": 80,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-090-20260826_152313",
+    "image": "data/wear_percent_cases/20260826_152313.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-090-20260826_152344",
+    "image": "data/wear_percent_cases/20260826_152344.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-070-20260827_152948",
+    "image": "data/wear_percent_cases/20260827_152948.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-070-20260827_153216",
+    "image": "data/wear_percent_cases/20260827_153216.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-050-20260827_153457",
+    "image": "data/wear_percent_cases/20260827_153457.jpg",
+    "wear_rate": 0.5,
+    "wear_percent": 50,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-050-20260827_153603",
+    "image": "data/wear_percent_cases/20260827_153603.jpg",
+    "wear_rate": 0.5,
+    "wear_percent": 50,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-070-20260828_112119",
+    "image": "data/wear_percent_cases/20260828_112119.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-070-20260828_112243",
+    "image": "data/wear_percent_cases/20260828_112243.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-040-20260828_112524",
+    "image": "data/wear_percent_cases/20260828_112524.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-070-20260828_160228",
+    "image": "data/wear_percent_cases/20260828_160228.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-070-20260828_160352",
+    "image": "data/wear_percent_cases/20260828_160352.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-040-20260828_160635",
+    "image": "data/wear_percent_cases/20260828_160635.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-060-20260831_114140",
+    "image": "data/wear_percent_cases/20260831_114140.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-060-20260831_114318",
+    "image": "data/wear_percent_cases/20260831_114318.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-060-20260831_114427",
+    "image": "data/wear_percent_cases/20260831_114427.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-030-20260831_114835",
+    "image": "data/wear_percent_cases/20260831_114835.jpg",
+    "wear_rate": 0.3,
+    "wear_percent": 30,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-030-20260831_115114",
+    "image": "data/wear_percent_cases/20260831_115114.jpg",
+    "wear_rate": 0.3,
+    "wear_percent": 30,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-030-20260901_110301",
+    "image": "data/wear_percent_cases/20260901_110301.jpg",
+    "wear_rate": 0.3,
+    "wear_percent": 30,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-100-20260901_111426",
+    "image": "data/wear_percent_cases/20260901_111426.jpg",
+    "wear_rate": 1.0,
+    "wear_percent": 100,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-040-20260902_135056",
+    "image": "data/wear_percent_cases/20260902_135056.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-040-20260902_135550",
+    "image": "data/wear_percent_cases/20260902_135550.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-040-20260902_135735",
+    "image": "data/wear_percent_cases/20260902_135735.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-010-20260902_140011",
+    "image": "data/wear_percent_cases/20260902_140011.jpg",
+    "wear_rate": 0.1,
+    "wear_percent": 10,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-090-20260903_110533",
+    "image": "data/wear_percent_cases/20260903_110533.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-090-20260903_110617",
+    "image": "data/wear_percent_cases/20260903_110617.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-090-20260903_110752",
+    "image": "data/wear_percent_cases/20260903_110752.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-090-20260903_110816",
+    "image": "data/wear_percent_cases/20260903_110816.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-090-20260903_150923",
+    "image": "data/wear_percent_cases/20260903_150923.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-090-20260903_151118",
+    "image": "data/wear_percent_cases/20260903_151118.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-090-20260903_151143",
+    "image": "data/wear_percent_cases/20260903_151143.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-040-20260904_103904",
+    "image": "data/wear_percent_cases/20260904_103904.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-040-20260904_104109",
+    "image": "data/wear_percent_cases/20260904_104109.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "source": "使用者提供磨耗%資料集"
+  },
+  {
+    "id": "WEAR-040-20260904_105327",
+    "image": "data/wear_percent_cases/20260904_105327.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "source": "使用者提供磨耗%資料集"
+  }
+]

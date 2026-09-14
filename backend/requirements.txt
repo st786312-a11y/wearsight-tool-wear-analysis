@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+python-multipart
+open-clip-torch
+pillow
+ultralytics
+transformers>=4.56.2,<5
+httpx>=0.27,<1

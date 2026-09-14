@@ -1,0 +1,9 @@
+{
+  "retrieval_mode": "dinov2_roi",
+  "top_k": 5,
+  "detection_threshold": 0.09,
+  "similarity_threshold": 0.23,
+  "wear_std_threshold": 30.0,
+  "moderate_threshold": 40.0,
+  "replace_threshold": 80.0
+}

@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+data/cases/*.jpg
+data/cases/*.jpeg
+data/cases/*.png
