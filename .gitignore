@@ -8,10 +8,16 @@ node_modules/
 .ppt-render-ui/
 .ppt-render-white/
 reports/
+.test-temp/
+imports/
+WearSight-Online-Delivery-*/
+WearSight-Online-Delivery-*.zip
 WearSight-Windows-Offline-*/
 WearSight-Windows-Offline-*.zip
 backend/data/indexes/
 backend/data/analyses/
+backend/data/backups/
+backend/data/results/
 backend/data/evaluation.json
 backend/models/dinov3*/
 backend/models/dinov2*/

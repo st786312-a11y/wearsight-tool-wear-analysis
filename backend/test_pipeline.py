@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from io import BytesIO
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 import numpy as np
 import torch
@@ -192,6 +192,19 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(result['retrieval']['actual_k'],5)
         self.assertEqual(result['thresholds']['replace_threshold'],80)
         self.assertEqual(result['weighting'],'exp_cosine_x10')
+
+    def test_assistant_uses_dify_without_exposing_key(self):
+        result={'analysis_id':'a'*32,'original_image_url':'/api/results/query.jpg'}
+        response=MagicMock()
+        response.__enter__.return_value.read.return_value=json.dumps({'workflow_run_id':'run-1','data':{
+            'status':'succeeded','outputs':{'expert_answer':'Dify 回答'}}}).encode()
+        with patch.dict(main.os.environ,{'DIFY_API_KEY':'secret','DIFY_API_URL':'http://dify/v1'},clear=False), \
+             patch.object(main.urllib.request,'urlopen',return_value=response) as network:
+            answer=main.call_dify('可以使用嗎？',result)
+        self.assertEqual(answer['source'],'Dify / Ollama')
+        request=network.call_args.args[0]
+        self.assertEqual(request.full_url,'http://dify/v1/workflows/run')
+        self.assertNotIn('secret',request.data.decode())
 
 
 if __name__ == '__main__':

@@ -23,6 +23,8 @@
 
 目前改用 DINOv2。模型來源為 [facebook/dinov2-base](https://huggingface.co/facebook/dinov2-base)，使用 768 維 CLS 特徵與獨立 `dinov2_roi_embeddings.json` 索引，首次下載後保存在 Docker 持久快取。可於 `.env` 設定 `DINOV2_MODEL_PATH` 指向已掛載的官方 Hugging Face 模型資料夾。
 
+案例庫已更新為 `0914HDR分類_四區間` 的 105 張圖片：0–30% 共 18 張、31–60% 共 42 張、61–80% 共 22 張、81–100% 共 23 張。每筆保留原始磨耗百分比、train/val 來源與加工件數。YOLO 權重為配套的 `keypoint_best.pt`（Pose、`cutting_entry`、1 個關鍵點），在專案內統一命名為 `backend/models/keypoint-best.pt`。重新匯入可執行 `scripts/update_hdr_dataset.ps1`。
+
 DINOv3 尚未提供授權權重，該模式仍回傳 503，不會自動切模型。CLIP 比較模式保留。
 
 ## 取得 DINOv3 權重
@@ -64,7 +66,7 @@ DINOv3 尚未提供授權權重，該模式仍回傳 503，不會自動切模型
 
 移除舊的 40%／75% 前端判斷及由相似度裁切成的「分析信心度」。YOLO 信心度與相似度都不是磨耗率預測準確率。初始畫面不再顯示示意結果。
 
-`POST /api/assistant` 只接受 `analysis_id`、`question`，以後端已保存的完整分析快照回答。人工覆核結果由系統直接說明；其他結果可由 Ollama 補充，無法連線則提供系統建議。LLM 文字不是狀態判定來源。
+`POST /api/assistant` 只接受 `analysis_id`、`question`。設定 `DIFY_API_KEY` 後，後端會安全呼叫已發布的 Dify 工作流，Dify 再使用 Ollama 回答；金鑰不會送到瀏覽器。Dify 無法連線時會退回本機 Ollama 或系統建議。LLM 文字不是狀態判定來源。
 
 ## API 與 Dify
 
@@ -77,7 +79,7 @@ DINOv3 尚未提供授權權重，該模式仍回傳 503，不會自動切模型
 - `GET /api/health`：服務及模型載入狀態，不把服務存活當成模型已可用。
 - 案例、設定、歷史 API 保留。新增案例磨耗率仍採 0–1，前端表單以百分比輸入後轉換。移除案例只移除登錄，保留原始圖片。
 
-既有 Dify 作為獨立入口保留，網頁目前直接走 FastAPI。詳見 [Dify 節點遷移說明](dify/README.md)。Dify 線上已發布工作流需另行更新節點，修改本地文件不會自動發布。
+網頁的圖片偵測與檢索走 FastAPI；「Dify 檢測結果問答」由後端呼叫已發布的 Dify Service API。詳見 [Dify 節點遷移說明](dify/README.md)。
 
 ## 驗證
 

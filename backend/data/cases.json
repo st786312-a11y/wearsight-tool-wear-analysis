@@ -1,394 +1,1157 @@
 [
   {
-    "id": "WEAR-070-20260824_110424",
-    "image": "data/wear_percent_cases/20260824_110424.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-070-20260824_110731",
-    "image": "data/wear_percent_cases/20260824_110731.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-070-20260824_110902",
-    "image": "data/wear_percent_cases/20260824_110902.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-020-20260824_111355",
-    "image": "data/wear_percent_cases/20260824_111355.jpg",
+    "id": "HDR-020-train-20260824_111355",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260824_111355.jpg",
     "wear_rate": 0.2,
     "wear_percent": 20,
-    "source": "使用者提供磨耗%資料集"
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 35,
+    "source": "0914HDR分類_四區間",
+    "metadata": "This blade is currently worn by 20%, having cut 35 parts."
   },
   {
-    "id": "WEAR-020-20260824_111730",
-    "image": "data/wear_percent_cases/20260824_111730.jpg",
-    "wear_rate": 0.2,
-    "wear_percent": 20,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-070-20260824_155540",
-    "image": "data/wear_percent_cases/20260824_155540.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-070-20260824_155728",
-    "image": "data/wear_percent_cases/20260824_155728.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-030-20260824_160449",
-    "image": "data/wear_percent_cases/20260824_160449.jpg",
+    "id": "HDR-030-train-20260824_160449",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260824_160449.jpg",
     "wear_rate": 0.3,
     "wear_percent": 30,
-    "source": "使用者提供磨耗%資料集"
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 62,
+    "source": "0914HDR分類_四區間",
+    "metadata": "This blade is currently worn out by 30% and has cut 62 parts."
   },
   {
-    "id": "WEAR-030-20260824_160750",
-    "image": "data/wear_percent_cases/20260824_160750.jpg",
+    "id": "HDR-030-train-20260824_160750",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260824_160750.jpg",
     "wear_rate": 0.3,
     "wear_percent": 30,
-    "source": "使用者提供磨耗%資料集"
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 62,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle, this blade is currently worn out by 30%, has cut 62 parts"
   },
   {
-    "id": "WEAR-080-20260825_103207",
-    "image": "data/wear_percent_cases/20260825_103207.jpg",
-    "wear_rate": 0.8,
-    "wear_percent": 80,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-080-20260825_103248",
-    "image": "data/wear_percent_cases/20260825_103248.jpg",
-    "wear_rate": 0.8,
-    "wear_percent": 80,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-040-20260825_103408",
-    "image": "data/wear_percent_cases/20260825_103408.jpg",
-    "wear_rate": 0.4,
-    "wear_percent": 40,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-040-20260825_103446",
-    "image": "data/wear_percent_cases/20260825_103446.jpg",
-    "wear_rate": 0.4,
-    "wear_percent": 40,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-070-20260825_151557",
-    "image": "data/wear_percent_cases/20260825_151557.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-070-20260825_151716",
-    "image": "data/wear_percent_cases/20260825_151716.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-090-20260825_151905",
-    "image": "data/wear_percent_cases/20260825_151905.jpg",
-    "wear_rate": 0.9,
-    "wear_percent": 90,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-090-20260825_151947",
-    "image": "data/wear_percent_cases/20260825_151947.jpg",
-    "wear_rate": 0.9,
-    "wear_percent": 90,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-040-20260826_104031",
-    "image": "data/wear_percent_cases/20260826_104031.jpg",
-    "wear_rate": 0.4,
-    "wear_percent": 40,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-040-20260826_104204",
-    "image": "data/wear_percent_cases/20260826_104204.jpg",
-    "wear_rate": 0.4,
-    "wear_percent": 40,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-080-20260826_104337",
-    "image": "data/wear_percent_cases/20260826_104337.jpg",
-    "wear_rate": 0.8,
-    "wear_percent": 80,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-080-20260826_104444",
-    "image": "data/wear_percent_cases/20260826_104444.jpg",
-    "wear_rate": 0.8,
-    "wear_percent": 80,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-080-20260826_151927",
-    "image": "data/wear_percent_cases/20260826_151927.jpg",
-    "wear_rate": 0.8,
-    "wear_percent": 80,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-080-20260826_152132",
-    "image": "data/wear_percent_cases/20260826_152132.jpg",
-    "wear_rate": 0.8,
-    "wear_percent": 80,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-090-20260826_152313",
-    "image": "data/wear_percent_cases/20260826_152313.jpg",
-    "wear_rate": 0.9,
-    "wear_percent": 90,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-090-20260826_152344",
-    "image": "data/wear_percent_cases/20260826_152344.jpg",
-    "wear_rate": 0.9,
-    "wear_percent": 90,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-070-20260827_152948",
-    "image": "data/wear_percent_cases/20260827_152948.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-070-20260827_153216",
-    "image": "data/wear_percent_cases/20260827_153216.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-050-20260827_153457",
-    "image": "data/wear_percent_cases/20260827_153457.jpg",
-    "wear_rate": 0.5,
-    "wear_percent": 50,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-050-20260827_153603",
-    "image": "data/wear_percent_cases/20260827_153603.jpg",
-    "wear_rate": 0.5,
-    "wear_percent": 50,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-070-20260828_112119",
-    "image": "data/wear_percent_cases/20260828_112119.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-070-20260828_112243",
-    "image": "data/wear_percent_cases/20260828_112243.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-040-20260828_112524",
-    "image": "data/wear_percent_cases/20260828_112524.jpg",
-    "wear_rate": 0.4,
-    "wear_percent": 40,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-070-20260828_160228",
-    "image": "data/wear_percent_cases/20260828_160228.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-070-20260828_160352",
-    "image": "data/wear_percent_cases/20260828_160352.jpg",
-    "wear_rate": 0.7,
-    "wear_percent": 70,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-040-20260828_160635",
-    "image": "data/wear_percent_cases/20260828_160635.jpg",
-    "wear_rate": 0.4,
-    "wear_percent": 40,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-060-20260831_114140",
-    "image": "data/wear_percent_cases/20260831_114140.jpg",
-    "wear_rate": 0.6,
-    "wear_percent": 60,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-060-20260831_114318",
-    "image": "data/wear_percent_cases/20260831_114318.jpg",
-    "wear_rate": 0.6,
-    "wear_percent": 60,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-060-20260831_114427",
-    "image": "data/wear_percent_cases/20260831_114427.jpg",
-    "wear_rate": 0.6,
-    "wear_percent": 60,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-030-20260831_114835",
-    "image": "data/wear_percent_cases/20260831_114835.jpg",
+    "id": "HDR-030-train-20260831_114835_short",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260831_114835_short.jpg",
     "wear_rate": 0.3,
     "wear_percent": 30,
-    "source": "使用者提供磨耗%資料集"
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 159,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The secondary spindle has worn 30%\r\n159 parts have been machined."
   },
   {
-    "id": "WEAR-030-20260831_115114",
-    "image": "data/wear_percent_cases/20260831_115114.jpg",
+    "id": "HDR-030-train-20260831_114835",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260831_114835.jpg",
     "wear_rate": 0.3,
     "wear_percent": 30,
-    "source": "使用者提供磨耗%資料集"
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 159,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The secondary spindle has worn 30%\r\n159 parts have been machined."
   },
   {
-    "id": "WEAR-030-20260901_110301",
-    "image": "data/wear_percent_cases/20260901_110301.jpg",
+    "id": "HDR-030-train-20260831_115114_short",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260831_115114_short.jpg",
     "wear_rate": 0.3,
     "wear_percent": 30,
-    "source": "使用者提供磨耗%資料集"
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 159,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\n30% worn 159 pieces cut"
   },
   {
-    "id": "WEAR-100-20260901_111426",
-    "image": "data/wear_percent_cases/20260901_111426.jpg",
-    "wear_rate": 1.0,
-    "wear_percent": 100,
-    "source": "使用者提供磨耗%資料集"
+    "id": "HDR-030-train-20260831_115114",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260831_115114.jpg",
+    "wear_rate": 0.3,
+    "wear_percent": 30,
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 159,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\n30% worn 159 pieces cut"
   },
   {
-    "id": "WEAR-040-20260902_135056",
-    "image": "data/wear_percent_cases/20260902_135056.jpg",
-    "wear_rate": 0.4,
-    "wear_percent": 40,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-040-20260902_135550",
-    "image": "data/wear_percent_cases/20260902_135550.jpg",
-    "wear_rate": 0.4,
-    "wear_percent": 40,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-040-20260902_135735",
-    "image": "data/wear_percent_cases/20260902_135735.jpg",
-    "wear_rate": 0.4,
-    "wear_percent": 40,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-010-20260902_140011",
-    "image": "data/wear_percent_cases/20260902_140011.jpg",
+    "id": "HDR-010-train-20260902_140011_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260902_140011_mid.jpg",
     "wear_rate": 0.1,
     "wear_percent": 10,
-    "source": "使用者提供磨耗%資料集"
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\nWorn 10%\r\n89 parts have been machined."
   },
   {
-    "id": "WEAR-090-20260903_110533",
-    "image": "data/wear_percent_cases/20260903_110533.jpg",
-    "wear_rate": 0.9,
-    "wear_percent": 90,
-    "source": "使用者提供磨耗%資料集"
+    "id": "HDR-010-train-20260902_140011_short",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260902_140011_short.jpg",
+    "wear_rate": 0.1,
+    "wear_percent": 10,
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\nWorn 10%\r\n89 parts have been machined."
   },
   {
-    "id": "WEAR-090-20260903_110617",
-    "image": "data/wear_percent_cases/20260903_110617.jpg",
-    "wear_rate": 0.9,
-    "wear_percent": 90,
-    "source": "使用者提供磨耗%資料集"
+    "id": "HDR-010-train-20260902_140011",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260902_140011.jpg",
+    "wear_rate": 0.1,
+    "wear_percent": 10,
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\nWorn 10%\r\n89 parts have been machined."
   },
   {
-    "id": "WEAR-090-20260903_110752",
-    "image": "data/wear_percent_cases/20260903_110752.jpg",
-    "wear_rate": 0.9,
-    "wear_percent": 90,
-    "source": "使用者提供磨耗%資料集"
+    "id": "HDR-000-train-20260907_162027_long",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260907_162027_long.jpg",
+    "wear_rate": 0.0,
+    "wear_percent": 0,
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 12,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The secondary spindle has worn by 0%\r\nTwelve parts have been machined."
   },
   {
-    "id": "WEAR-090-20260903_110816",
-    "image": "data/wear_percent_cases/20260903_110816.jpg",
-    "wear_rate": 0.9,
-    "wear_percent": 90,
-    "source": "使用者提供磨耗%資料集"
+    "id": "HDR-000-train-20260907_162027_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260907_162027_mid.jpg",
+    "wear_rate": 0.0,
+    "wear_percent": 0,
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 12,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The secondary spindle has worn by 0%\r\nTwelve parts have been machined."
   },
   {
-    "id": "WEAR-090-20260903_150923",
-    "image": "data/wear_percent_cases/20260903_150923.jpg",
-    "wear_rate": 0.9,
-    "wear_percent": 90,
-    "source": "使用者提供磨耗%資料集"
+    "id": "HDR-000-train-20260907_162027_short",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260907_162027_short.jpg",
+    "wear_rate": 0.0,
+    "wear_percent": 0,
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 12,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The secondary spindle has worn by 0%\r\nTwelve parts have been machined."
   },
   {
-    "id": "WEAR-090-20260903_151118",
-    "image": "data/wear_percent_cases/20260903_151118.jpg",
-    "wear_rate": 0.9,
-    "wear_percent": 90,
-    "source": "使用者提供磨耗%資料集"
+    "id": "HDR-000-train-20260907_162027",
+    "image": "data/hdr_four_band_cases_20260915/train-0-30-20260907_162027.jpg",
+    "wear_rate": 0.0,
+    "wear_percent": 0,
+    "wear_band": "0-30",
+    "dataset_split": "train",
+    "parts_cut": 12,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The secondary spindle has worn by 0%\r\nTwelve parts have been machined."
   },
   {
-    "id": "WEAR-090-20260903_151143",
-    "image": "data/wear_percent_cases/20260903_151143.jpg",
-    "wear_rate": 0.9,
-    "wear_percent": 90,
-    "source": "使用者提供磨耗%資料集"
-  },
-  {
-    "id": "WEAR-040-20260904_103904",
-    "image": "data/wear_percent_cases/20260904_103904.jpg",
+    "id": "HDR-040-train-20260825_103408",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260825_103408.jpg",
     "wear_rate": 0.4,
     "wear_percent": 40,
-    "source": "使用者提供磨耗%資料集"
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 95,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Second cow\r\nThis tool is currently worn by 40 percent.\r\nNinety-five parts have been machined."
   },
   {
-    "id": "WEAR-040-20260904_104109",
-    "image": "data/wear_percent_cases/20260904_104109.jpg",
+    "id": "HDR-040-train-20260825_103446",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260825_103446.jpg",
     "wear_rate": 0.4,
     "wear_percent": 40,
-    "source": "使用者提供磨耗%資料集"
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 95,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The second one, this tool is currently worn by 40%, and has machined 95 parts."
   },
   {
-    "id": "WEAR-040-20260904_105327",
-    "image": "data/wear_percent_cases/20260904_105327.jpg",
+    "id": "HDR-040-train-20260826_104031",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260826_104031.jpg",
     "wear_rate": 0.4,
     "wear_percent": 40,
-    "source": "使用者提供磨耗%資料集"
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 126,
+    "source": "0914HDR分類_四區間",
+    "metadata": "First tool, the current wear of this tool is about 40%\r\n126 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260826_104204",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260826_104204.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 126,
+    "source": "0914HDR分類_四區間",
+    "metadata": "First tool, this tool is currently 40% worn out, has cut 126 parts."
+  },
+  {
+    "id": "HDR-050-train-20260827_153457",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260827_153457.jpg",
+    "wear_rate": 0.5,
+    "wear_percent": 50,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 524,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\nWorn out 50%, cut 524 parts"
+  },
+  {
+    "id": "HDR-050-train-20260827_153603",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260827_153603.jpg",
+    "wear_rate": 0.5,
+    "wear_percent": 50,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 524,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\n50% worn out / 524 parts machined"
+  },
+  {
+    "id": "HDR-040-train-20260828_112524",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260828_112524.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 571,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\n40% worn out\r\n571 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260828_160635_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260828_160635_mid.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 602,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\n40% worn 602 pieces cut"
+  },
+  {
+    "id": "HDR-040-train-20260828_160635_short",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260828_160635_short.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 602,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\n40% worn 602 pieces cut"
+  },
+  {
+    "id": "HDR-040-train-20260828_160635",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260828_160635.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 602,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\n40% worn 602 pieces cut"
+  },
+  {
+    "id": "HDR-060-train-20260831_114140_long",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260831_114140_long.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 0,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWore down by 60 percent"
+  },
+  {
+    "id": "HDR-060-train-20260831_114140_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260831_114140_mid.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 0,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWore down by 60 percent"
+  },
+  {
+    "id": "HDR-060-train-20260831_114140_short",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260831_114140_short.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 0,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWore down by 60 percent"
+  },
+  {
+    "id": "HDR-060-train-20260831_114140",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260831_114140.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 0,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWore down by 60 percent"
+  },
+  {
+    "id": "HDR-060-train-20260831_114318_long",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260831_114318_long.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 159,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWorn 60%\r\n159 parts have been machined."
+  },
+  {
+    "id": "HDR-060-train-20260831_114318_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260831_114318_mid.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 159,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWorn 60%\r\n159 parts have been machined."
+  },
+  {
+    "id": "HDR-060-train-20260831_114318_short",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260831_114318_short.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 159,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWorn 60%\r\n159 parts have been machined."
+  },
+  {
+    "id": "HDR-060-train-20260831_114318",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260831_114318.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 159,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWorn 60%\r\n159 parts have been machined."
+  },
+  {
+    "id": "HDR-060-train-20260831_114427_long",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260831_114427_long.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 159,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nAlready worn out 60%\r\n159 parts have been machined."
+  },
+  {
+    "id": "HDR-060-train-20260831_114427_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260831_114427_mid.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 159,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nAlready worn out 60%\r\n159 parts have been machined."
+  },
+  {
+    "id": "HDR-060-train-20260831_114427_short",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260831_114427_short.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 159,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nAlready worn out 60%\r\n159 parts have been machined."
+  },
+  {
+    "id": "HDR-060-train-20260831_114427",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260831_114427.jpg",
+    "wear_rate": 0.6,
+    "wear_percent": 60,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 159,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nAlready worn out 60%\r\n159 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260902_135056_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260902_135056_mid.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The main shaft has worn 40%\r\n89 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260902_135056_short",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260902_135056_short.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The main shaft has worn 40%\r\n89 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260902_135056",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260902_135056.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The main shaft has worn 40%\r\n89 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260902_135735_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260902_135735_mid.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWorn 40%\r\n89 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260902_135735_short",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260902_135735_short.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWorn 40%\r\n89 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260902_135735",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260902_135735.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWorn 40%\r\n89 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260904_103904_long",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260904_103904_long.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main spindle has worn 40% / Has machined 140 parts"
+  },
+  {
+    "id": "HDR-040-train-20260904_103904_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260904_103904_mid.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main spindle has worn 40% / Has machined 140 parts"
+  },
+  {
+    "id": "HDR-040-train-20260904_103904_short",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260904_103904_short.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main spindle has worn 40% / Has machined 140 parts"
+  },
+  {
+    "id": "HDR-040-train-20260904_103904",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260904_103904.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main spindle has worn 40% / Has machined 140 parts"
+  },
+  {
+    "id": "HDR-040-train-20260904_104109_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260904_104109_mid.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The main spindle has worn 40%, and 140 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260904_104109_short",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260904_104109_short.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The main spindle has worn 40%, and 140 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260904_104109",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260904_104109.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The main spindle has worn 40%, and 140 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260904_105327_long",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260904_105327_long.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The secondary spindle has worn 40%\r\n140 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260904_105327_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260904_105327_mid.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The secondary spindle has worn 40%\r\n140 parts have been machined."
+  },
+  {
+    "id": "HDR-040-train-20260904_105327",
+    "image": "data/hdr_four_band_cases_20260915/train-31-60-20260904_105327.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The secondary spindle has worn 40%\r\n140 parts have been machined."
+  },
+  {
+    "id": "HDR-070-train-20260824_110424",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260824_110424.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 200,
+    "source": "0914HDR分類_四區間",
+    "metadata": "This tool is now 70% worn.\r\nTwo hundred have been cut"
+  },
+  {
+    "id": "HDR-070-train-20260824_110731",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260824_110731.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 204,
+    "source": "0914HDR分類_四區間",
+    "metadata": "This blade is currently worn out by 70%, having cut 204 pieces in total."
+  },
+  {
+    "id": "HDR-070-train-20260824_110902",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260824_110902.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 240,
+    "source": "0914HDR分類_四區間",
+    "metadata": "This blade is currently worn out by 70%\r\n240 parts have been machined."
+  },
+  {
+    "id": "HDR-070-train-20260824_155540",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260824_155540.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 267,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main spindle, this blade is currently worn out by 70%, has cut 267 parts"
+  },
+  {
+    "id": "HDR-070-train-20260824_155728",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260824_155728.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 267,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The main cutting tool has worn 70% and has machined 267 parts."
+  },
+  {
+    "id": "HDR-080-train-20260825_103207",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260825_103207.jpg",
+    "wear_rate": 0.8,
+    "wear_percent": 80,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 300,
+    "source": "0914HDR分類_四區間",
+    "metadata": "This tool is currently worn out by 80%\r\n300 parts have been machined."
+  },
+  {
+    "id": "HDR-080-train-20260825_103248",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260825_103248.jpg",
+    "wear_rate": 0.8,
+    "wear_percent": 80,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 300,
+    "source": "0914HDR分類_四區間",
+    "metadata": "This tool is currently worn out by 80%\r\n300 parts have been machined."
+  },
+  {
+    "id": "HDR-070-train-20260825_151557",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260825_151557.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 123,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The second tool has a wear of about 70% and has cut 123 pieces."
+  },
+  {
+    "id": "HDR-070-train-20260825_151716",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260825_151716.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 123,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Second blade, this tool is currently worn about 70%\r\nHave machined 123 parts"
+  },
+  {
+    "id": "HDR-080-train-20260826_104337",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260826_104337.jpg",
+    "wear_rate": 0.8,
+    "wear_percent": 80,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 163,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Second cow\r\nThis tool is currently worn about 80%\r\n163 parts have been machined."
+  },
+  {
+    "id": "HDR-080-train-20260826_151927",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260826_151927.jpg",
+    "wear_rate": 0.8,
+    "wear_percent": 80,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 397,
+    "source": "0914HDR分類_四區間",
+    "metadata": "First cow\r\nThis tool is currently worn about 80%, having cut 397 parts."
+  },
+  {
+    "id": "HDR-080-train-20260826_152132",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260826_152132.jpg",
+    "wear_rate": 0.8,
+    "wear_percent": 80,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 397,
+    "source": "0914HDR分類_四區間",
+    "metadata": "First cow\r\nThis blade is currently worn about 80%\r\n397 parts have been machined."
+  },
+  {
+    "id": "HDR-070-train-20260827_152948",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260827_152948.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 524,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWore down by 70 percent\r\n524 parts have been machined."
+  },
+  {
+    "id": "HDR-070-train-20260827_153216",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260827_153216.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 524,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWorn 70%\r\n524 parts have been machined."
+  },
+  {
+    "id": "HDR-070-train-20260828_112119",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260828_112119.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 571,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\n70% worn out\r\n571 parts have been machined."
+  },
+  {
+    "id": "HDR-070-train-20260828_112243",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260828_112243.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 571,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\n70% worn out, 571 parts have been machined"
+  },
+  {
+    "id": "HDR-070-train-20260828_160228_long",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260828_160228_long.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 602,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\n70% worn out, 602 parts machined"
+  },
+  {
+    "id": "HDR-070-train-20260828_160228",
+    "image": "data/hdr_four_band_cases_20260915/train-61-80-20260828_160228.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "train",
+    "parts_cut": 602,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\n70% worn out, 602 parts machined"
+  },
+  {
+    "id": "HDR-090-train-20260825_151905",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260825_151905.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 328,
+    "source": "0914HDR分類_四區間",
+    "metadata": "First cow\r\nThis tool is currently worn about 90%.\r\n328 parts have been machined."
+  },
+  {
+    "id": "HDR-090-train-20260825_151947",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260825_151947.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 328,
+    "source": "0914HDR分類_四區間",
+    "metadata": "First tool, the tool is currently worn out about 90%, has cut 328 parts"
+  },
+  {
+    "id": "HDR-090-train-20260826_152313",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260826_152313.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 192,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Second cow\r\nThis tool is currently worn about 90%\r\n192 parts have been machined."
+  },
+  {
+    "id": "HDR-090-train-20260826_152344",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260826_152344.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 192,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Second one,\r\nThis tool is currently worn about 90%, having cut 192 parts."
+  },
+  {
+    "id": "HDR-100-train-20260901_111426_short",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260901_111426_short.jpg",
+    "wear_rate": 1.0,
+    "wear_percent": 100,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 64,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The secondary spindle is fully worn out, and 64 parts have been machined.\r\nThe blade has been sealed, and is not usable."
+  },
+  {
+    "id": "HDR-100-train-20260901_111426",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260901_111426.jpg",
+    "wear_rate": 1.0,
+    "wear_percent": 100,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 64,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The secondary spindle is fully worn out, and 64 parts have been machined.\r\nThe blade has been sealed, and is not usable."
+  },
+  {
+    "id": "HDR-090-train-20260903_110533_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_110533_mid.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nOuter diameter wear 90%\r\nCutting 140 parts"
+  },
+  {
+    "id": "HDR-090-train-20260903_110533_short",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_110533_short.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nOuter diameter wear 90%\r\nCutting 140 parts"
+  },
+  {
+    "id": "HDR-090-train-20260903_110533",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_110533.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nOuter diameter wear 90%\r\nCutting 140 parts"
+  },
+  {
+    "id": "HDR-090-train-20260903_110617_mid",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_110617_mid.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nOuter diameter wear is 90%, already cut 140 pieces."
+  },
+  {
+    "id": "HDR-090-train-20260903_110617_short",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_110617_short.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nOuter diameter wear is 90%, already cut 140 pieces."
+  },
+  {
+    "id": "HDR-090-train-20260903_110617",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_110617.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nOuter diameter wear is 90%, already cut 140 pieces."
+  },
+  {
+    "id": "HDR-090-train-20260903_110752_short",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_110752_short.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\nOuter diameter wear 90% has been cut 140 times"
+  },
+  {
+    "id": "HDR-090-train-20260903_110752",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_110752.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle\r\nOuter diameter wear 90% has been cut 140 times"
+  },
+  {
+    "id": "HDR-090-train-20260903_110816_short",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_110816_short.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle outer diameter wear 90%\r\nHave already cut 140 pieces"
+  },
+  {
+    "id": "HDR-090-train-20260903_110816",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_110816.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle outer diameter wear 90%\r\nHave already cut 140 pieces"
+  },
+  {
+    "id": "HDR-090-train-20260903_151118_short",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_151118_short.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main spindle outer diameter wear 90% has been machined 140 times"
+  },
+  {
+    "id": "HDR-090-train-20260903_151118",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_151118.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main spindle outer diameter wear 90% has been machined 140 times"
+  },
+  {
+    "id": "HDR-090-train-20260903_151143_short",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_151143_short.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main spindle outer diameter wear is 90%, already cut 140 pieces"
+  },
+  {
+    "id": "HDR-090-train-20260903_151143",
+    "image": "data/hdr_four_band_cases_20260915/train-81-100-20260903_151143.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "train",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main spindle outer diameter wear is 90%, already cut 140 pieces"
+  },
+  {
+    "id": "HDR-020-val-20260824_111730",
+    "image": "data/hdr_four_band_cases_20260915/val-0-30-20260824_111730.jpg",
+    "wear_rate": 0.2,
+    "wear_percent": 20,
+    "wear_band": "0-30",
+    "dataset_split": "val",
+    "parts_cut": 35,
+    "source": "0914HDR分類_四區間",
+    "metadata": "This blade has worn 20% and has cut 35 parts."
+  },
+  {
+    "id": "HDR-030-val-20260901_110301_mid",
+    "image": "data/hdr_four_band_cases_20260915/val-0-30-20260901_110301_mid.jpg",
+    "wear_rate": 0.3,
+    "wear_percent": 30,
+    "wear_band": "0-30",
+    "dataset_split": "val",
+    "parts_cut": 64,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The main shaft has worn 30%\r\n64 parts have been machined."
+  },
+  {
+    "id": "HDR-030-val-20260901_110301_short",
+    "image": "data/hdr_four_band_cases_20260915/val-0-30-20260901_110301_short.jpg",
+    "wear_rate": 0.3,
+    "wear_percent": 30,
+    "wear_band": "0-30",
+    "dataset_split": "val",
+    "parts_cut": 64,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The main shaft has worn 30%\r\n64 parts have been machined."
+  },
+  {
+    "id": "HDR-030-val-20260901_110301",
+    "image": "data/hdr_four_band_cases_20260915/val-0-30-20260901_110301.jpg",
+    "wear_rate": 0.3,
+    "wear_percent": 30,
+    "wear_band": "0-30",
+    "dataset_split": "val",
+    "parts_cut": 64,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The main shaft has worn 30%\r\n64 parts have been machined."
+  },
+  {
+    "id": "HDR-040-val-20260902_135550_long",
+    "image": "data/hdr_four_band_cases_20260915/val-31-60-20260902_135550_long.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "val",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWorn 40%\r\n89 parts have been machined."
+  },
+  {
+    "id": "HDR-040-val-20260902_135550_mid",
+    "image": "data/hdr_four_band_cases_20260915/val-31-60-20260902_135550_mid.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "val",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWorn 40%\r\n89 parts have been machined."
+  },
+  {
+    "id": "HDR-040-val-20260902_135550_short",
+    "image": "data/hdr_four_band_cases_20260915/val-31-60-20260902_135550_short.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "val",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWorn 40%\r\n89 parts have been machined."
+  },
+  {
+    "id": "HDR-040-val-20260902_135550",
+    "image": "data/hdr_four_band_cases_20260915/val-31-60-20260902_135550.jpg",
+    "wear_rate": 0.4,
+    "wear_percent": 40,
+    "wear_band": "31-60",
+    "dataset_split": "val",
+    "parts_cut": 89,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\nWorn 40%\r\n89 parts have been machined."
+  },
+  {
+    "id": "HDR-080-val-20260826_104444",
+    "image": "data/hdr_four_band_cases_20260915/val-61-80-20260826_104444.jpg",
+    "wear_rate": 0.8,
+    "wear_percent": 80,
+    "wear_band": "61-80",
+    "dataset_split": "val",
+    "parts_cut": 163,
+    "source": "0914HDR分類_四區間",
+    "metadata": "The second tool has approximately 80% wear.\r\n163 parts have been machined."
+  },
+  {
+    "id": "HDR-070-val-20260828_160352_mid",
+    "image": "data/hdr_four_band_cases_20260915/val-61-80-20260828_160352_mid.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "val",
+    "parts_cut": 602,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\n70% worn out\r\n602 parts have been machined."
+  },
+  {
+    "id": "HDR-070-val-20260828_160352_short",
+    "image": "data/hdr_four_band_cases_20260915/val-61-80-20260828_160352_short.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "val",
+    "parts_cut": 602,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\n70% worn out\r\n602 parts have been machined."
+  },
+  {
+    "id": "HDR-070-val-20260828_160352",
+    "image": "data/hdr_four_band_cases_20260915/val-61-80-20260828_160352.jpg",
+    "wear_rate": 0.7,
+    "wear_percent": 70,
+    "wear_band": "61-80",
+    "dataset_split": "val",
+    "parts_cut": 602,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Main axis\r\n70% worn out\r\n602 parts have been machined."
+  },
+  {
+    "id": "HDR-090-val-20260903_150923_mid",
+    "image": "data/hdr_four_band_cases_20260915/val-81-100-20260903_150923_mid.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "val",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle wear 90% has been cut 140 pieces"
+  },
+  {
+    "id": "HDR-090-val-20260903_150923_short",
+    "image": "data/hdr_four_band_cases_20260915/val-81-100-20260903_150923_short.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "val",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle wear 90% has been cut 140 pieces"
+  },
+  {
+    "id": "HDR-090-val-20260903_150923",
+    "image": "data/hdr_four_band_cases_20260915/val-81-100-20260903_150923.jpg",
+    "wear_rate": 0.9,
+    "wear_percent": 90,
+    "wear_band": "81-100",
+    "dataset_split": "val",
+    "parts_cut": 140,
+    "source": "0914HDR分類_四區間",
+    "metadata": "Secondary spindle wear 90% has been cut 140 pieces"
   }
 ]

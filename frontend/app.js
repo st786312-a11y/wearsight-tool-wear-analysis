@@ -121,7 +121,7 @@ $('askAssistant').onclick=async()=>{
   finally{if(version===generation)$('askAssistant').disabled=false;}
 };
 async function refreshHealth(){
-  try{const health=await api('/api/health');$('serviceStatus').textContent='分析服務已連線';$('modelStatus').textContent=health.model_loaded?'預設模型已載入':'預設模型尚未載入';}
+  try{const health=await api('/api/health');$('serviceStatus').textContent='分析服務已連線';const model=health.model_loaded?'預設模型已載入':'預設模型尚未載入';const dify=health.dify?.connected?'Dify 已連線':health.dify?.configured?'Dify 連線失敗':'Dify 尚未設定';$('modelStatus').textContent=`${model} · ${dify}`;}
   catch{$('serviceStatus').textContent='服務未連線';$('modelStatus').textContent='請確認後端服務';}
 }
 async function initialize(){

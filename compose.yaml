@@ -13,6 +13,10 @@ services:
     environment:
       OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
       OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:1.5b}
+      DIFY_API_URL: ${DIFY_API_URL:-http://host.docker.internal/v1}
+      DIFY_API_KEY: ${DIFY_API_KEY:-}
+      DIFY_ANALYSIS_URL_BASE: ${DIFY_ANALYSIS_URL_BASE:-http://host.docker.internal:8000}
+      DIFY_TIMEOUT: ${DIFY_TIMEOUT:-120}
       YOLO_MODEL_PATH: /app/yolo/keypoint-best.pt
       HF_HOME: /models/huggingface
       HF_TOKEN: ${HF_TOKEN:-}

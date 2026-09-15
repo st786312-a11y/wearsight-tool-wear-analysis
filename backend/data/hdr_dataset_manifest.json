@@ -1,0 +1,34 @@
+{
+  "updated_at": "2026-09-15T18:41:37.0349155+08:00",
+  "case_count": 105,
+  "by_band": [
+    {
+      "band": "0-30",
+      "count": 18
+    },
+    {
+      "band": "31-60",
+      "count": 42
+    },
+    {
+      "band": "61-80",
+      "count": 22
+    },
+    {
+      "band": "81-100",
+      "count": 23
+    }
+  ],
+  "by_split": [
+    {
+      "split": "train",
+      "count": 90
+    },
+    {
+      "split": "val",
+      "count": 15
+    }
+  ],
+  "weight_sha256": "1A55339228E21074AE7D4867F1C7CAC1747B0FEFB65740F0B46B73522DAB18B4",
+  "backup": "data/backups/hdr-update-20260915-184136"
+}

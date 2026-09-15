@@ -92,10 +92,45 @@ class IndexRequest(BaseModel):
     mode: Mode = 'dinov2_roi'
 
 
+def call_dify(question, result):
+    api_key = os.getenv('DIFY_API_KEY', '').strip()
+    original_url = result.get('original_image_url')
+    if not api_key or not original_url:
+        return None
+    base_url = os.getenv('DIFY_API_URL', 'http://host.docker.internal/v1').rstrip('/')
+    analysis_base = os.getenv('DIFY_ANALYSIS_URL_BASE', 'http://host.docker.internal:8000').rstrip('/')
+    payload = json.dumps({
+        'inputs': {'question': question, 'image_url': analysis_base + original_url},
+        'response_mode': 'blocking',
+        'user': f"wearsight-web-{result['analysis_id'][:12]}",
+    }, ensure_ascii=False).encode('utf-8')
+    request = urllib.request.Request(
+        base_url + '/workflows/run', data=payload,
+        headers={'Authorization': f'Bearer {api_key}', 'Content-Type': 'application/json'},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=float(os.getenv('DIFY_TIMEOUT', '120'))) as response:
+            body = json.loads(response.read())
+        data = body.get('data') or {}
+        if data.get('status') != 'succeeded':
+            return None
+        outputs = data.get('outputs') or {}
+        answer = outputs.get('expert_answer') or outputs.get('text')
+        if isinstance(answer, str) and answer.strip():
+            return {'answer': answer.strip(), 'source': 'Dify / Ollama',
+                    'analysis_id': result['analysis_id'], 'workflow_run_id': body.get('workflow_run_id')}
+    except (OSError, ValueError):
+        return None
+    return None
+
+
 def expert_answer(question, result):
     snapshot = {key: result.get(key) for key in ['analysis_id', 'predicted_wear_percent', 'detection_confidence',
                'retrieval', 'status', 'status_label', 'reasons', 'assessment', 'thresholds']}
     fallback = f"{result['status_label']}。{result['status_reason']} 建議：{result['assessment']['recommendation']}。"
+    dify = call_dify(question, result)
+    if dify:
+        return dify
     if result['status'] == 'manual_review':
         return {'answer': fallback, 'source': '系統建議', 'analysis_id': result['analysis_id']}
     prompt = ('你是刀具檢測結果說明助手，使用繁體中文，150 字內。只說明下列系統結果。'
@@ -132,7 +167,8 @@ def save_analysis(result, filename, question):
 @app.post('/api/analyze')
 async def analyze(request: Request, image: UploadFile | None = File(None), image_url: str | None = Form(None),
                   question: str | None = Form(None), mode: Mode | None = Form(None), case_id: str | None = Form(None)):
-    if request.headers.get('content-type', '').startswith('application/json'):
+    json_request = request.headers.get('content-type', '').startswith('application/json')
+    if json_request:
         try:
             body = await request.json()
             if not isinstance(body, dict):
@@ -150,6 +186,10 @@ async def analyze(request: Request, image: UploadFile | None = File(None), image
     settings = get_settings_value()
     selected_mode = mode or settings.retrieval_mode
     question = (question or '').strip()
+    # Dify's HTTP node uses the JSON contract. It only needs the deterministic
+    # analysis snapshot; letting this endpoint invoke Dify again would recurse.
+    if json_request:
+        question = ''
     max_bytes = 20 * 1024 * 1024
     try:
         if image:
@@ -169,6 +209,15 @@ async def analyze(request: Request, image: UploadFile | None = File(None), image
                 if record is None:
                     raise HTTPException(404, '找不到指定案例圖片。')
                 data = (ROOT / record['image']).read_bytes()
+            elif parsed.path.startswith('/api/results/'):
+                # Dify receives a URL for the original upload. When it calls this
+                # container back, read our own generated file directly instead of
+                # relying on Docker's host-port hairpin route.
+                result_name = Path(urllib.parse.unquote(parsed.path)).name
+                result_path = RESULTS_DIR / result_name
+                if not result_name or not result_path.is_file():
+                    raise HTTPException(404, '找不到指定分析圖片。')
+                data = result_path.read_bytes()
             else:
                 with urllib.request.urlopen(image_url, timeout=15) as response:
                     data = response.read(max_bytes + 1)
@@ -186,6 +235,9 @@ async def analyze(request: Request, image: UploadFile | None = File(None), image
 
 
 def analyze_image(image, filename, question, mode, case_id, file_digest, settings):
+    original_filename = f'{uuid.uuid4().hex}_original.jpg'
+    image.save(RESULTS_DIR / original_filename, quality=95)
+    original_url = f'/api/results/{original_filename}'
     detection_result = detect_tool(image)
     detection = detection_result['detection']
     prepared, bbox = prepare(image, mode, detection)
@@ -212,7 +264,7 @@ def analyze_image(image, filename, question, mode, case_id, file_digest, setting
               'wear_std': retrieved['wear_std_percent'] / 100 if retrieved['wear_std_percent'] is not None else None,
               'tool_class': detection['tool_class'] if detection else None,
               'detection_confidence': detection['confidence'] if detection else None,
-              'roi_bbox': bbox, 'roi_image_url': roi_url,
+              'roi_bbox': bbox, 'roi_image_url': roi_url, 'original_image_url': original_url,
               'retrieval': {'mode': mode, **MODES[mode], 'k': 5, 'actual_k': len(retrieved['top_k']),
                             'average_similarity': retrieved['average_similarity'], 'wear_std_percent': retrieved['wear_std_percent'],
                             'top_k': retrieved['top_k'], 'weighting': WEIGHTING,
@@ -320,9 +372,18 @@ def update_settings(settings: Settings):
 @app.get('/api/health')
 def health():
     selected = get_settings_value().retrieval_mode
+    dify = {'configured': bool(os.getenv('DIFY_API_KEY', '').strip()), 'connected': False}
+    if dify['configured']:
+        endpoint = os.getenv('DIFY_API_URL', 'http://host.docker.internal/v1').rstrip('/') + '/info'
+        try:
+            request = urllib.request.Request(endpoint, headers={'Authorization': f"Bearer {os.getenv('DIFY_API_KEY').strip()}"})
+            with urllib.request.urlopen(request, timeout=3) as response:
+                dify['connected'] = response.status == 200
+        except OSError:
+            pass
     return {'status': 'ok', 'default_mode': selected, 'yolo_weight_present': YOLO_PATH.exists(),
             'loaded_encoders': list(encoders), 'model_loaded': encoder_kind(selected) in encoders,
-            'weighting': WEIGHTING, 'dify_routing': 'external_workflow',
+            'weighting': WEIGHTING, 'dify': dify,
             'note': '服務上線不代表模型權重已就緒。'}
 
 
