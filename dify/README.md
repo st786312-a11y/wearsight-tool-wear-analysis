@@ -1,6 +1,6 @@
 # Dify 與 WearSight 網頁連接
 
-可直接在 Dify 匯入 [車刀磨耗分析工作流.yml](車刀磨耗分析工作流.yml)。工作流接受 `image_url` 與 `question`，先呼叫 WearSight 分析 API，再由 Ollama `qwen2.5:1.5b` 說明後端產生的結果。
+可直接在 Dify 匯入 [車刀磨耗分析工作流.yml](車刀磨耗分析工作流.yml)。工作流接受 `image_url` 與 `question`，先呼叫 WearSight 分析 API，再由 Ollama `phi4:latest` 說明後端產生的結果。
 
 ```text
 WearSight 網頁 → POST /api/assistant
@@ -13,7 +13,7 @@ WearSight 網頁 → POST /api/assistant
 ## Dify 設定
 
 1. 匯入並發布 `車刀磨耗分析工作流.yml`。
-2. Ollama Base URL 設為 `http://host.docker.internal:11434`，模型選 `qwen2.5:1.5b`。
+2. Ollama Base URL 設為 `http://host.docker.internal:11434`，模型選 `phi4:latest`。
 3. Dify HTTP 節點使用 `http://host.docker.internal:8000/api/analyze`。
 4. 在 Dify「訪問 API」建立 Service API 金鑰。
 5. 複製 `.env.example` 為 `.env`，填入 `DIFY_API_KEY`。金鑰不可提交到 Git。

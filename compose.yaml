@@ -3,7 +3,7 @@ services:
     build:
       context: ./frontend
     ports:
-      - "8080:80"
+      - "${FRONTEND_PORT:-8080}:80"
     depends_on:
       - api
 
@@ -37,3 +37,4 @@ services:
 
 volumes:
   clip-model-cache:
+

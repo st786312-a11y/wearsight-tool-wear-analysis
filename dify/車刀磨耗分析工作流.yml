@@ -238,7 +238,7 @@ workflow:
           completion_params:
             temperature: 0.7
           mode: chat
-          name: qwen2.5:1.5b
+          name: phi4:latest
           provider: langgenius/ollama/ollama
         prompt_config:
           jinja2_variables: []
